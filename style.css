@@ -1,0 +1,6752 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "Montserrat", sans-serif;
+
+    background: #f5f0e9;
+
+    color: #171612;
+
+    overflow-x: hidden;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =====================================================
+   PALETA
+===================================================== */
+
+:root {
+
+    --verde: #031b12;
+
+    --verde-2: #08291c;
+
+    --dourado: #d59a3a;
+
+    --dourado-claro: #f2c16a;
+
+    --laranja: #bd6e2c;
+
+    --creme: #f5f0e9;
+
+    --creme-2: #e9e0d4;
+
+    --marrom: #76502f;
+
+    --preto: #171612;
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 65px;
+
+    padding: 0 4%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 100;
+}
+
+
+.header-logo {
+    width: 185px;
+}
+
+
+.header-logo img {
+    width: 100%;
+    height: auto;
+}
+
+
+.navigation {
+    display: flex;
+
+    align-items: center;
+
+    gap: 27px;
+
+    color: #fff;
+
+    font-size: 10px;
+}
+
+
+.header-button {
+
+    padding: 10px 18px;
+
+    background: #c88a39;
+
+    color: #fff;
+
+    border-radius: 8px;
+
+    transition: .3s;
+}
+
+
+.header-button:hover {
+    background: #e0a957;
+}
+
+
+.header-button {
+
+    padding: 11px 18px;
+
+    background: #c88a39;
+
+    border-radius: 8px;
+}
+
+
+.menu-button {
+
+    display: none;
+
+    border: 0;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   HERO / BANNER
+===================================================== */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    min-height: 500px;
+    overflow: hidden;
+    color: #fff;
+}
+
+
+/* IMAGEM DE FUNDO */
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+
+    background-image: url("assets/logo_BANER PONTE.jpeg");
+
+    background-size: cover;
+    background-position: center center;
+
+    filter: brightness(0.72);
+}
+
+
+/* CAMADA ESCURA */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.92) 0%,
+            rgba(0, 0, 0, 0.58) 35%,
+            rgba(0, 0, 0, 0.18) 65%,
+            rgba(0, 0, 0, 0.55) 100%
+        );
+}
+
+
+/* CONTEÚDO */
+
+.hero-container {
+    position: relative;
+    z-index: 3;
+
+    width: 92%;
+    max-width: 1400px;
+
+    height: 100%;
+
+    margin: 0 auto;
+
+    padding-top: 88px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+/* =====================================================
+   ÁREA ESQUERDA DO BANNER
+===================================================== */
+
+.hero-text {
+    position: absolute;
+
+    left: 4%;
+
+    top: 70px;
+
+    width: 420px;
+
+    height: 300px;
+
+    z-index: 10;
+}
+
+
+/* =====================================================
+   LOGO CIHOF
+===================================================== */
+
+.cihof-small {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 270px;
+    height: auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    z-index: 10;
+}
+
+.cihof-small img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter:
+        brightness(1.8)
+        contrast(1.1)
+        drop-shadow(
+            0 0 8px rgba(255, 190, 80, 0.7)
+        );
+}
+
+
+/* =====================================================
+   DATA E LOCAL
+===================================================== */
+
+.hero-details {
+    position: absolute;
+
+    left: 0;
+    top: 190px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+
+    margin: 0;
+
+    font-size: 9px;
+    line-height: 1.4;
+
+    z-index: 20;
+}
+
+
+/* =====================================================
+   BOTÃO
+===================================================== */
+
+.hero-text .gold-button {
+    position: absolute;
+
+    left: 0;
+    top: 350px;
+
+    z-index: 30;
+
+    min-width: 255px;
+
+    padding: 10px 18px;
+
+    border: 1px solid #d9a441;
+    border-radius: 25px;
+
+    color: #d9a441;
+}
+
+.hero-text .gold-button:hover {
+    background: #d59a3a;
+    color: #fff;
+}
+
+
+/* =====================================================
+   RENAISSANCE - CENTRO
+===================================================== */
+
+.renaissance-container {
+   position: absolute;
+
+    top: 43%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 450px;
+    height: 340px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 8;
+}
+
+.renaissance-container img {
+     width: 450px;
+    max-width: 100%;
+
+    height: auto;
+    max-height: 340px;
+
+    object-fit: contain;
+
+    filter: none;
+}
+
+.renaissance-container {
+    position: absolute;
+
+    top: 58%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 8;
+}
+
+.renaissance-logo {
+    width: 450px;
+    height: auto;
+    display: block;
+}
+
+.renaissance-text {
+    width: 350px;
+    height: auto;
+
+    display: block;
+
+    margin-top: 8px;
+}
+/* =====================================================
+   SEÇÃO IMERSAO RENAISSANCE
+===================================================== */
+
+.about-section {
+    width: 100%;
+    padding: 35px 4% 45px;
+
+    background: #F7E4CF;
+}
+
+
+.about-content {
+    width: 100%;
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 45px;
+}
+
+
+/* =====================================================
+   TEXTO
+===================================================== */
+
+.about-text {
+    width: 43%;
+
+    flex-shrink: 0;
+}
+
+
+.section-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family: "satoshi";
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #b96727;
+
+    letter-spacing: 0.3px;
+}
+
+
+.about-text h2 {
+    margin: 0 0 18px;
+
+    font-family: "playfair display";
+
+    font-size: clamp(34px, 3vw, 48px);
+
+    line-height: 1.02;
+
+    font-weight: 500;
+
+    color: #02110C;
+}
+
+
+.about-text h2 span {
+    color: #012C0F;
+}
+
+
+/* =====================================================
+   TEXTO "a imersão renaissance..."
+===================================================== */
+
+.about-description {
+    max-width: 570px;
+
+    margin: 0;
+
+    font-family: "satoshi";
+
+    font-size: 19px;
+
+    line-height: 1.55;
+
+    font-weight: 500;
+
+    color: #012C0F;
+}
+
+
+/* =====================================================
+   FRASE FINAL
+===================================================== */
+
+.about-bottom {
+    margin-top: 25px;
+
+    padding-top: 14px;
+
+    border-top: 1px solid #b96727;
+}
+
+
+.about-bottom h3 {
+    margin: 0;
+
+    font-family: "playfair display";
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    color: #D9A441;
+}
+
+
+.about-bottom p {
+    margin: 0;
+
+    font-family: "satoshi";
+
+    font-size: 19px;
+
+    color: #012C0F;
+}
+
+
+/* =====================================================
+   IMAGEM
+===================================================== */
+
+.about-image {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.about-image img {
+    width: 75%;
+    max-width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border: 2px solid #012C0F;
+    border-radius: 20px;
+
+    display: block;
+}
+
+/* =====================================================
+   EXPERIÊNCIAS QUE FICAM
+===================================================== */
+
+.experiences {
+
+    width: 100%;
+
+    padding: 25px 4%;
+
+    background: #354104;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 0px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   TEXTOS
+===================================================== */
+
+.experiences-text {
+
+    width: 40%;
+
+    flex-shrink: 0;
+}
+
+
+.experiences-label {
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #d9a441;
+
+    font-family: "satoshi";
+
+    font-size: 14px;
+
+    font-weight: 300;
+}
+
+
+.experiences-text h2 {
+
+    margin: 0 0 15px;
+
+    font-family: "playfair display";
+
+    font-size: 40px;
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+    color: #F7E4CF;
+}
+
+
+.experiences-text p {
+
+    margin: 0 0 20px;
+
+    max-width: 450px;
+
+    font-family: "satoshi";
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    color: #F7E4CF;
+}
+
+
+/* =====================================================
+   BOTÃO
+===================================================== */
+
+.experiences-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 10px 18px;
+
+    border: 1px solid #d9a441;
+
+    border-radius: 25px;
+
+    color: #d9a441;
+
+    text-decoration: none;
+
+    font-family: "satoshi";
+
+    font-size: 13px;
+
+    transition: .3s;
+}
+
+
+.experiences-button span {
+
+    font-size: 20px;
+
+    line-height: 1;
+}
+
+
+.experiences-button:hover {
+
+    background: #d9a441;
+
+    color: #031b12;
+}
+
+
+/* =====================================================
+   UMA FOTO
+===================================================== */
+
+.experience-image {
+
+    width: 40%;
+
+    height: 270px;
+
+    overflow: hidden;
+
+    border: 2px solid #d9a441;
+
+    border-radius: 16px;
+
+    box-sizing: border-box;
+}
+
+
+.experience-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+/* =====================================================
+   DEPOIMENTOS
+===================================================== */
+
+.testimonials {
+
+    max-width: 100%;
+
+    margin: auto;
+
+    padding: 0 0 18px;
+    background-color: #F7E4CF;
+}
+
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.section-title h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    font-weight: 500;
+    white-space: nowrap;
+    margin: 0;
+    text-align: center;
+}
+
+.section-title span {
+    height: 1px;
+    background: #012c01;
+    flex: 1;
+}
+
+/* CONTAINER DO CARROSSEL */
+
+.testimonial-wrapper {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    background-color: #F7E4CF;
+}
+
+
+/* ÁREA DE ROLAGEM */
+
+.testimonial-slider {
+
+    width: 100%;
+
+    display: flex;
+
+    gap: 14px;
+
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+
+    padding: 3px 2px 8px;
+}
+
+
+.testimonial-slider::-webkit-scrollbar {
+
+    display: none;
+}
+
+
+/* CADA DEPOIMENTO */
+
+.testimonial {
+    flex: 0 0 calc((100% - 28px) / 3);
+
+    background: #F7E4CF;
+
+    border-radius: 13px;
+
+    height: 220px;
+
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+.testimonial img {
+    width: 100%;
+    max-width: 550px;
+    max-height: 190px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: auto;
+}
+
+/* =====================================================
+   SETAS DOS DEPOIMENTOS
+===================================================== */
+
+.testimonial-arrow {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 100;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: 2px solid #d9a441;
+
+    background: #031b12;
+
+    color: #d9a441;
+
+    font-size: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    opacity: 1;
+}
+
+.testimonial-arrow.left {
+    left: 8px;
+}
+
+.testimonial-arrow.right {
+    right: 8px;
+}
+
+.testimonial-arrow:hover {
+    background: #d9a441;
+    color: #031b12;
+}
+/* =====================================================
+   BOLINHAS DOS DEPOIMENTOS
+===================================================== */
+
+.testimonial-dots {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 18px;
+    padding: 5px 0;
+
+    min-height: 20px;
+
+    position: relative;
+    z-index: 100;
+}
+
+.testimonial-dot {
+    width: 10px;
+    height: 10px;
+
+    padding: 0;
+    margin: 0;
+
+    border-radius: 50%;
+
+    border: 1px solid #704b2b;
+
+    background: transparent;
+
+    display: block;
+
+    cursor: pointer;
+
+    opacity: 1;
+}
+
+.testimonial-dot.active {
+    background: #d9a441;
+    border-color: #d9a441;
+}
+
+/* =====================================================
+   CONEXÕES QUE TRANSFORMAM
+===================================================== */
+
+.connections {
+    width: 100%;
+    padding: 35px 4% 40px;
+    background: #354104;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+
+/* =====================================================
+   TEXTOS
+===================================================== */
+
+.connections-text {
+    width: 100%;
+    max-width: 550px;
+}
+
+
+.connections-label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-family: "satoshi";
+
+    font-size: 19px;
+
+    font-weight: 500;
+
+    color: #D9A441;
+
+    letter-spacing: 0.5px;
+}
+
+
+.connections-text h2 {
+    margin: 0 0 16px;
+
+    font-family: "playfair display";
+
+    font-size: 40px;
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+    color: #F7E4CF;
+}
+
+
+.connections-text p {
+    margin: 0;
+
+    max-width: 560px;
+
+    font-family: "satoshi";
+
+    font-size: 19px;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+
+    color: #fff;
+}
+
+/* =====================================================
+   IMAGEM - CONEXÕES
+===================================================== */
+
+.networking-image {
+    width: 150%;
+    max-width: 400px;
+    margin-left: auto;
+
+    display: block;
+}
+
+
+/* FOTO */
+
+.networking-image {
+    width: 100% !important;
+    height: 280px !important;
+
+    object-fit: cover;
+
+    display: block;
+
+    border: 2px solid #d9a441 !important;
+    border-radius: 20px !important;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+/* =====================================================
+   PALESTRANTES
+===================================================== */
+
+.speakers {
+    width: 100%;
+    padding: 25px 4% 35px;
+    background: #F7E4CF;
+    color: #354104;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   TÍTULO
+===================================================== */
+
+.speakers-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.speakers-title h2 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 27px;
+    font-weight: 500;
+
+    color: #354104;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   ÁREA DO CARROSSEL
+===================================================== */
+
+.speakers-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+
+/* =====================================================
+   CARROSSEL
+===================================================== */
+
+.speakers-slider {
+    width: 100%;
+
+    display: flex;
+
+    gap: 25px;
+
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+
+    padding: 5px 5px 15px;
+}
+
+.speakers-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =====================================================
+   CARD DO PALESTRANTE
+===================================================== */
+
+.speaker {
+    flex: 0 0 calc((100% - 25px) / 2);
+
+    scroll-snap-align: start;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   FOTO
+===================================================== */
+
+.speaker img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 8px;
+    display: block;
+}
+
+.speaker img[src*="Dr Marcelo"] {
+    object-position: center center;
+}
+/* =====================================================
+   NOME
+===================================================== */
+
+.speaker h3 {
+    margin: 10px 0 5px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #031b12;
+
+    text-align: center;
+
+    line-height: 1.25;
+}
+
+
+/* =====================================================
+   TÍTULO DA PALESTRA
+===================================================== */
+
+.speaker p {
+    margin: 0;
+
+    max-width: 190px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.4;
+
+    color: #354104;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   SETAS
+===================================================== */
+
+.speaker-arrow {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 10;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    border: 1px solid #d9a441;
+
+    background: #031b12;
+
+    color: #d9a441;
+
+    font-family: serif;
+    font-size: 28px;
+
+    line-height: 20px;
+
+    cursor: pointer;
+
+    display: grid;
+    place-items: center;
+
+    transition: all 0.3s ease;
+}
+
+
+/* SETA ESQUERDA */
+
+.speaker-arrow.left {
+    left: -18px;
+}
+
+
+/* SETA DIREITA */
+
+.speaker-arrow.right {
+    right: -18px;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.speaker-arrow:hover {
+    background: #d9a441;
+    color: #031b12;
+}
+
+
+/* =====================================================
+   BOLINHAS
+===================================================== */
+
+.speaker-dots {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 8px;
+}
+
+
+/* BOLINHA */
+
+.speaker-dot {
+    width: 7px;
+    height: 7px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    border: 1px solid #d9a441;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+
+/* BOLINHA ATIVA */
+
+.speaker-dot.active {
+    background: #d9a441;
+}
+
+
+/* =====================================================
+   BOTÃO VER TODOS
+===================================================== */
+
+.see-all-speakers {
+    display: block;
+
+    width: fit-content;
+
+    margin: 18px auto 0;
+
+    padding: 10px 28px;
+
+    border: 1px solid #d9a441;
+
+    border-radius: 30px;
+
+    background: #031b12;
+
+    color: #d9a441;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+/* EFEITO DO BOTÃO */
+
+.see-all-speakers:hover {
+    background: #d9a441;
+    color: #031b12;
+}
+
+
+/* =====================================================
+   LOCAL
+===================================================== */
+
+.location {
+
+    min-height: 108px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: #f1ebe2;
+}
+
+
+.location > img {
+
+    width: 35%;
+
+    height: 74px;
+
+    object-fit: cover;
+}
+
+
+.location-title h2 {
+
+    font-family: "playfair display";
+
+    font-size: 21px;
+
+    font-weight: 500;
+}
+
+
+.location-title em {
+
+    font-family: "satoshi";
+
+    font-size: 15px;
+}
+
+
+.location-data {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+}
+
+
+.location-data strong {
+
+    color: var(--marrom);
+
+    font-size: 18px;
+}
+
+
+.location > .gold-button {
+
+    margin-left: auto;
+
+    margin-right: 5%;
+}
+
+
+/* =====================================================
+   INFORMAÇÕES
+===================================================== */
+
+.information {
+
+    display: grid;
+
+    grid-template-columns: 1.05fr 1fr 1fr;
+
+    padding: 12px 4% 15px;
+
+    border-top: 1px solid #d1bda5;
+
+    background: var(--creme);
+}
+
+
+.information-column {
+
+    padding: 0 18px;
+
+    border-right: 1px solid #c0aa91;
+}
+
+
+.information-column:last-child {
+
+    border-right: none;
+}
+
+
+.information-column h3 {
+
+    font-family: "satoshi";
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+}
+
+
+/* FAQ */
+
+.faq-item button {
+
+    width: 100%;
+
+    border: 1px solid #bca68d;
+
+    background: transparent;
+
+    padding: 4px 7px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    font-family: "satoshi";
+
+    font-size: 15px;
+
+    margin-bottom: 3px;
+}
+
+
+.faq-answer {
+
+    display: none;
+
+    padding: 6px 7px;
+
+    background: #e9e0d4;
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+    margin-top: -3px;
+
+    margin-bottom: 3px;
+}
+
+
+.faq-item.open .faq-answer {
+
+    display: block;
+}
+
+
+/* LISTAS */
+
+.information-column ul {
+
+    list-style: none;
+
+    font-size: 13px;
+
+    line-height: 2.2;
+}
+
+
+/* BOTÃO */
+
+.outline-button {
+
+    display: inline-block;
+
+    margin-top: 7px;
+
+    border: 1px solid #c5a177;
+
+    border-radius: 20px;
+
+    padding: 6px 18px;
+
+    color: #704b2b;
+
+    font-size: 8px;
+
+    transition: .3s;
+}
+
+
+.outline-button:hover {
+
+    background: var(--dourado);
+
+    color: white;
+}
+
+
+/* =====================================================
+   CTA FINAL
+===================================================== */
+
+.final-cta {
+
+    background: var(--verde);
+
+    color: var(--dourado-claro);
+
+    text-align: center;
+
+    padding: 12px 4%;
+
+}
+
+
+.final-cta > p {
+
+    color: #fff;
+
+    font-family: "playfair display";
+
+    font-size: 16px;
+     
+}
+
+
+.final-cta h2 {
+
+    font-family: "playfair display";
+
+    font-size: 20px;
+
+    font-style: italic;
+
+    font-weight: 400;
+
+    margin-bottom: 8px;
+ 
+}
+
+
+.final-items {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 55px;
+
+    margin-top: 10px;
+  
+}
+
+
+.final-items div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: var(--dourado-claro);
+
+    font-size: 20px;
+     
+   
+
+}
+
+
+.final-items span {
+
+    color: white;
+
+    text-align: left;
+
+    font-size: 7px;
+
+    line-height: 1.2;
+    
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    width: 100%;
+    background: #354104;
+    color: #fff;
+    padding: 25px 4% 18px;
+}
+
+/* =====================================================
+   CONTEÚDO PRINCIPAL
+===================================================== */
+
+.footer-content {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr 1.4fr 0.9fr;
+    gap: 25px;
+
+    align-items: start;
+}
+
+/* =====================================================
+   LOGO RENAISSANCE
+===================================================== */
+
+.footer-brand {
+    text-align: center;
+    transform: translateY(0);
+}
+
+.footer-brand img {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.footer-tagline {
+    font-family: "Montserrat", sans-serif;
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: #d9a441;
+    margin: 0 0 10px;
+}
+
+.footer-description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #d8d8d8;
+    margin: 0;
+}
+
+
+/* =====================================================
+   COLUNAS
+===================================================== */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-column h3,
+.footer-realization span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #d9a441;
+
+    margin: 0 0 8px;
+}
+
+
+/* =====================================================
+   LINKS
+===================================================== */
+
+.footer-column a {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #d9a441;
+}
+
+
+/* =====================================================
+   ÍCONE INSTAGRAM
+===================================================== */
+
+.instagram-icon {
+    width: 16px;
+    height: 16px;
+
+    display: inline-flex;
+    flex-shrink: 0;
+}
+
+.instagram-icon svg {
+    width: 100%;
+    height: 100%;
+
+    fill: none;
+    stroke: #d9a441;
+    stroke-width: 1.8;
+}
+
+
+/* =====================================================
+   OUTROS ÍCONES
+===================================================== */
+
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    margin-right: 8px;
+    color: #d9a441;
+}
+
+.contact-icon i {
+    font-size: 14px;
+}
+
+/* =====================================================
+   REALIZAÇÃO
+===================================================== */
+
+.footer-realization {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+}
+
+.footer-realization img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 8px;
+}
+
+
+/* =====================================================
+   PARTE INFERIOR
+===================================================== */
+
+.footer-bottom {
+    max-width: 1150px;
+    margin: 22px auto 0;
+    padding-top: 12px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+
+    color: #cfcfcf;
+
+    text-decoration: none;
+    margin: 0;
+}
+
+.footer-bottom a {
+    transition: 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #d9a441;
+}
+
+
+/* =================================
+   LOCAL DO EVENTO
+================================= */
+
+.location {
+    width: 100%;
+    padding: 55px 5% 65px;
+    background: #354104 !important;
+    color: #f7e4cf !important;
+    box-sizing: border-box;
+}
+
+.location-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.location-title span {
+    width: 55px;
+    height: 1px;
+    background: #d9a441;
+}
+
+.location-title h2 {
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #f7e4cf !important;
+    text-align: center;
+}
+
+/* CONTEÚDO */
+
+.location-content {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* FOTOS */
+
+.location-images {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 18px;
+    align-items: center;
+}
+
+.location-images img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.location-images img:nth-child(2) {
+    height: 300px;
+}
+
+/* TEXTO */
+
+.location-info {
+    width: 100%;
+    max-width: 430px;
+}
+
+.location-label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #d9a441 !important;
+}
+
+.location-info h3 {
+    margin: 0 0 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 35px;
+    line-height: 1.15;
+    font-weight: 500;
+    color: #f7e4cf !important;
+}
+
+.location-info p {
+    margin: 0 0 18px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #e9e0d4 !important;
+}
+
+.location-info strong {
+    color: #d9a441 !important;
+}
+
+/* BOTÃO */
+
+.location-button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 11px 25px;
+    border: 1px solid #d9a441;
+    border-radius: 30px;
+    background: transparent;
+    color: #d9a441 !important;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.location-button:hover {
+    background: #d9a441;
+    color: #031b12 !important;
+}
+
+/* AJUSTE FINAL - LOCAL MAIS COMPACTO */
+
+.location {
+    padding: 30px 5% 35px;
+}
+
+.location-title {
+    margin-bottom: 18px;
+}
+
+.location-title h2 {
+    font-size: 23px;
+}
+
+.location-title span {
+    width: 40px;
+}
+
+.location-content {
+    max-width: 850px;
+    gap: 28px;
+}
+
+.location-images {
+    gap: 10px;
+}
+
+.location-images img {
+    height: 220px;
+    border-radius: 7px;
+}
+
+.location-images img:nth-child(2) {
+    height: 185px;
+}
+
+.location-info {
+    max-width: 330px;
+}
+
+.location-label {
+    font-size: 9px;
+    letter-spacing: 2.5px;
+    margin-bottom: 8px;
+}
+
+.location-info h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.location-info p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.location-button {
+    margin-top: 3px;
+    padding: 8px 18px;
+    font-size: 9px;
+}
+
+/* =========================
+   MENU PRINCIPAL
+========================= */
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+
+    color: #f7e4cf;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+/* linha dourada abaixo do item */
+
+.main-menu a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    width: 0;
+    height: 1px;
+
+    background: #d9a441;
+
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+/* quando passar o mouse */
+
+.main-menu a:hover {
+    color: #d9a441;
+}
+
+.main-menu a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   SETAS DOS DEPOIMENTOS
+========================= */
+
+.testimonial-wrapper {
+    position: relative;
+    padding: 0 55px;
+}
+
+.testimonial-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    border: 1px solid #d9a441;
+
+    background: #031b12;
+    color: #d9a441;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.testimonial-arrow.left {
+    left: 8px;
+}
+
+.testimonial-arrow.right {
+    right: 8px;
+}
+
+/* =========================
+   WHATSAPP FLUTUANTE
+========================= */
+
+.whatsapp-float {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #25D366;
+    color: white;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    font-size: 28px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+
+    z-index: 9999;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.whatsapp-float i {
+    font-size: 28px;
+}
+
+/* =========================
+   BOTÃO GARANTA SUA INSCRIÇÃO
+========================= */
+
+.inscricao-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 280px;
+    padding: 13px 30px;
+
+    border: 1.5px solid #d9a441;
+    border-radius: 50px;
+
+    background: transparent;
+    color: #d9a441;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.inscricao-btn:hover {
+    background: #d9a441;
+    color: #031b12;
+}
+
+/* =====================================================
+   CORREÇÕES FINAIS
+===================================================== */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 27px;
+}
+
+.navigation .header-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.header {
+    z-index: 1000;
+}
+
+.whatsapp-float {
+    z-index: 9999;
+}
+
+
+/* =====================================================
+   CONTAGEM REGRESSIVA
+===================================================== */
+
+.countdown {
+    margin: 35px 0 30px;
+    text-align: center;
+}
+
+.countdown-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #02110C;
+    margin-bottom: 15px;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.countdown-box {
+    min-width: 75px;
+    text-align: center;
+}
+
+.countdown-box span {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1;
+    color: #354104;;
+}
+
+.countdown-box small {
+    display: block;
+    margin-top: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #354104;
+}
+
+.countdown-separator {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    color: #d59a3a;
+    margin-top: -15px;
+}
+
+
+/* =====================================================
+   CONTAGEM — CELULAR
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .countdown {
+        margin: 25px 0;
+    }
+
+    .countdown-title {
+        font-size: 9px;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+    }
+
+    .countdown-container {
+        gap: 5px;
+    }
+
+    .countdown-box {
+        min-width: 58px;
+    }
+
+    .countdown-box span {
+        font-size: 32px;
+    }
+
+    .countdown-box small {
+        font-size: 7px;
+        letter-spacing: 1px;
+        margin-top: 5px;
+    }
+
+    .countdown-separator {
+        font-size: 24px;
+        margin-top: -10px;
+    }
+
+}
+
+/* =====================================================
+   SEÇÃO DE PAGAMENTO / LOTES
+===================================================== */
+
+.pagamento-section {
+    width: 100%;
+    padding: 110px 6%;
+    background: #f5f0e9;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+.pagamento-header {
+    max-width: 800px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.pagamento-header > span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    color: #76502f;
+}
+
+.pagamento-header h2 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(45px, 6vw, 72px);
+
+    font-weight: 400;
+
+    line-height: .9;
+
+    color: #031b12;
+}
+
+.pagamento-header h2 strong {
+    display: block;
+
+    font-weight: 500;
+
+    font-style: italic;
+
+    color: #bd6e2c;
+}
+
+.pagamento-divider {
+    width: 65px;
+    height: 1px;
+
+    margin: 25px auto;
+
+    background: #d59a3a;
+}
+
+.pagamento-header p {
+    margin: 0;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 13px;
+
+    color: #76502f;
+
+    letter-spacing: .3px;
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.pagamento-cards {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.pagamento-card {
+    position: relative;
+
+    min-height: 390px;
+
+    padding: 45px 35px;
+
+    box-sizing: border-box;
+
+    background: #031b12;
+
+    border: 1px solid #d59a3a;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.pagamento-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(3, 27, 18, .18);
+}
+
+
+/* =====================================================
+   CARD EM DESTAQUE
+===================================================== */
+
+.pagamento-destaque {
+    background: #08291c;
+
+    border: 2px solid #d59a3a;
+
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 15px 40px rgba(3, 27, 18, .15);
+}
+
+.pagamento-destaque:hover {
+    transform: translateY(-19px);
+}
+
+
+/* =====================================================
+   SELO
+===================================================== */
+
+.pagamento-selo {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding: 8px 20px;
+
+    background: #d59a3a;
+
+    color: #031b12;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   NÚMERO DO LOTE
+===================================================== */
+
+.pagamento-card-top {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.pagamento-card-top span {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    color: #d59a3a;
+
+    margin-bottom: 2px;
+}
+
+.pagamento-card-top strong {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 58px;
+
+    line-height: .9;
+
+    font-weight: 500;
+
+    color: #f5f0e9;
+}
+
+
+/* =====================================================
+   LINHA
+===================================================== */
+
+.pagamento-card-line {
+    width: 45px;
+    height: 1px;
+
+    background: #d59a3a;
+
+    margin: 22px auto;
+}
+
+
+/* =====================================================
+   TÍTULO
+===================================================== */
+
+.pagamento-card h3 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px;
+
+    line-height: 1.05;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    color: #f5f0e9;
+}
+
+
+/* =====================================================
+   TEXTO
+===================================================== */
+
+.pagamento-card p {
+    max-width: 230px;
+
+    margin: 18px auto 25px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    letter-spacing: .8px;
+
+    color: #e9e0d4;
+}
+
+
+/* =====================================================
+   BOTÃO
+===================================================== */
+
+.pagamento-card a {
+    width: 100%;
+
+    max-width: 230px;
+
+    box-sizing: border-box;
+
+    padding: 14px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    background: transparent;
+
+    border: 1px solid #d59a3a;
+
+    color: #f2c16a;
+
+    text-decoration: none;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    transition: .3s ease;
+}
+
+.pagamento-card a:hover {
+    background: #d59a3a;
+
+    color: #031b12;
+}
+
+.pagamento-card a span {
+    font-size: 16px;
+
+    line-height: 1;
+}
+
+
+/* =====================================================
+   RODAPÉ
+===================================================== */
+
+.pagamento-footer {
+    margin: 55px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #76502f;
+}
+
+.pagamento-footer i {
+    font-style: normal;
+
+    color: #d59a3a;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .pagamento-section {
+        padding: 90px 5%;
+    }
+
+    .pagamento-cards {
+        grid-template-columns: 1fr;
+
+        max-width: 480px;
+
+        gap: 30px;
+    }
+
+    .pagamento-card {
+        min-height: 350px;
+    }
+
+    .pagamento-destaque {
+        transform: none;
+    }
+
+    .pagamento-destaque:hover {
+        transform: translateY(-7px);
+    }
+
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .pagamento-section {
+        padding: 75px 20px;
+    }
+
+    .pagamento-header {
+        margin-bottom: 50px;
+    }
+
+    .pagamento-header h2 {
+        font-size: 48px;
+    }
+
+    .pagamento-header p {
+        font-size: 12px;
+
+        line-height: 1.6;
+    }
+
+    .pagamento-card {
+        min-height: 340px;
+
+        padding: 40px 25px;
+    }
+
+    .pagamento-card-top strong {
+        font-size: 52px;
+    }
+
+    .pagamento-card h3 {
+        font-size: 23px;
+    }
+
+    .pagamento-footer {
+        text-align: center;
+
+        line-height: 2;
+    }
+
+}
+
+/* =====================================================
+   RESPONSIVIDADE — TABLET E CELULAR
+   Mantém o layout original no desktop
+===================================================== */
+
+/* TABLET: 769px até 1100px */
+@media (min-width: 769px) and (max-width: 1100px) {
+
+    .header {
+        padding: 0 4%;
+    }
+
+    .navigation {
+        gap: 16px;
+    }
+
+    .navigation a {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .header-button {
+        padding: 10px 14px;
+    }
+
+    .hero {
+        height: 560px;
+        min-height: 560px;
+    }
+
+    .hero-container {
+        width: 94%;
+        padding-top: 75px;
+    }
+
+    .hero-text {
+        left: 2%;
+        width: 340px;
+    }
+
+    .cihof-small {
+        width: 220px;
+    }
+
+    .hero-text .gold-button {
+        top: 300px;
+        min-width: 220px;
+    }
+
+    .renaissance-container {
+        width: 380px;
+    }
+
+    .renaissance-logo {
+        width: 380px;
+    }
+
+    .renaissance-text {
+        width: 300px;
+    }
+
+    .about-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .about-content {
+        gap: 30px;
+    }
+
+    .about-text {
+        width: 46%;
+    }
+
+    .about-image {
+        width: 50%;
+    }
+
+    .about-image img {
+        width: 48%;
+        max-width: 260px;
+        height: 270px;
+    }
+
+    .experiences {
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 30px;
+    }
+
+    .experiences-text,
+    .experience-image {
+        width: 48%;
+    }
+
+    .experiences-text h2 {
+        font-size: 34px;
+    }
+
+    .experiences-text p {
+        font-size: 17px;
+    }
+
+    .experience-image {
+        height: 250px;
+    }
+
+    .testimonial {
+        flex: 0 0 calc((100% - 28px) / 3);
+    }
+
+    .connections {
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 30px;
+    }
+
+    .connections-text {
+        width: 55%;
+        max-width: 520px;
+    }
+
+    .connections-text h2 {
+        font-size: 34px;
+    }
+
+    .connections-text p {
+        font-size: 17px;
+    }
+
+    .networking-image {
+        width: 42% !important;
+        max-width: 380px;
+    }
+
+    .speakers {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .speaker {
+        flex: 0 0 calc((100% - 25px) / 2);
+    }
+
+    .speaker img {
+        width: 155px;
+        height: 155px;
+    }
+
+    .location {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .location-content {
+        gap: 30px;
+    }
+
+    .location-images img {
+        height: 300px;
+    }
+
+    .location-images img:nth-child(2) {
+        height: 260px;
+    }
+
+    .information {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .information-column {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .information-column h3 {
+        font-size: 16px;
+    }
+
+    .information-column li {
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+    .pagamento-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .pagamento-cards {
+        gap: 18px;
+    }
+
+    .pagamento-card {
+        min-height: 360px;
+        padding: 35px 20px;
+    }
+
+    .footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1.3fr .9fr 1.3fr .9fr;
+        gap: 18px;
+    }
+}
+
+
+/* =====================================================
+   CELULAR E TABLET PEQUENO — ATÉ 768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        min-width: 0;
+    }
+
+    section,
+    header,
+    footer {
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+
+    /* -----------------------------
+       HEADER / MENU
+    ----------------------------- */
+
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 65px;
+
+        padding: 0 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        z-index: 1000;
+    }
+
+    .header-logo {
+        width: 140px;
+    }
+
+    .menu-button {
+        display: flex;
+
+        position: fixed;
+
+        top: 15px;
+        right: 18px;
+
+        width: 44px;
+        height: 44px;
+
+        padding: 0;
+
+        border: 1px solid #d9a441;
+        border-radius: 4px;
+
+        background: #031b12;
+        color: #d9a441;
+
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+        gap: 5px;
+
+        cursor: pointer;
+
+        z-index: 10000;
+    }
+
+    .menu-button span {
+        display: block;
+
+        width: 22px;
+        height: 1px;
+
+        background: #d9a441;
+    }
+
+    .navigation {
+        position: fixed;
+
+        top: 0;
+        right: -100%;
+
+        width: 100%;
+        height: 100vh;
+
+        max-width: none;
+
+        padding: 100px 30px 35px;
+
+        background: #031b12;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: flex-start;
+
+        gap: 18px;
+
+        overflow-y: auto;
+
+        transition: right .35s ease;
+
+        z-index: 9998;
+    }
+
+    .navigation.active {
+        right: 0;
+    }
+
+    .navigation a {
+        display: block;
+
+        width: 100%;
+
+        padding: 9px 0;
+
+        text-align: center;
+
+        color: #f5f0e9;
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+    .navigation .header-button {
+        width: 100%;
+        max-width: 340px;
+
+        margin-top: 12px;
+
+        padding: 14px 18px !important;
+
+        text-align: center;
+
+        white-space: normal;
+    }
+
+
+    /* -----------------------------
+       HERO
+    ----------------------------- */
+
+    .hero {
+        width: 100%;
+
+        height: auto;
+        min-height: 680px;
+
+        overflow: hidden;
+    }
+
+    .hero-background {
+        background-position: center center;
+    }
+
+    .hero-container {
+        width: 100%;
+        max-width: 100%;
+
+        min-height: 680px;
+        height: auto;
+
+        padding: 95px 20px 45px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: flex-start;
+    }
+
+    .hero-text {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: 100%;
+        height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .cihof-small {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: min(180px, 55vw);
+
+        height: auto;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-text .gold-button {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: 100%;
+        max-width: 290px;
+
+        min-width: 0;
+
+        margin-top: 24px;
+
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .renaissance-container {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        transform: none;
+
+        width: 100%;
+        height: auto;
+
+        margin-top: 32px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .renaissance-logo {
+        width: min(86vw, 360px);
+
+        height: auto;
+    }
+
+    .renaissance-text {
+        width: min(72vw, 300px);
+
+        height: auto;
+
+        margin-top: 8px;
+    }
+
+
+    /* -----------------------------
+       CONTAGEM
+    ----------------------------- */
+
+    .countdown {
+        width: 100%;
+        max-width: 380px;
+
+        margin: 25px auto;
+        padding: 0 12px;
+
+        text-align: center;
+    }
+
+    .countdown-container {
+        display: flex;
+
+        width: 100%;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: clamp(3px, 1.5vw, 8px);
+    }
+
+    .countdown-box {
+        min-width: clamp(48px, 15vw, 65px);
+    }
+
+    .countdown-box span {
+        font-size: clamp(27px, 8vw, 36px);
+    }
+
+    .countdown-box small {
+        font-size: clamp(5px, 1.7vw, 7px);
+
+        letter-spacing: 1px;
+    }
+
+    .countdown-separator {
+        font-size: clamp(19px, 5vw, 27px);
+    }
+
+
+    /* -----------------------------
+       EXPERIÊNCIA
+    ----------------------------- */
+
+    .about-section {
+        width: 100%;
+
+        padding: 55px 20px 60px;
+    }
+
+    .about-content {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 35px;
+    }
+
+    .about-text {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .section-label {
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+    .about-text h2 {
+        font-size: clamp(32px, 9vw, 45px);
+
+        line-height: 1;
+
+        margin-bottom: 18px;
+    }
+
+    .about-description,
+    .about-bottom p {
+        width: 100%;
+
+        max-width: 600px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+    .about-bottom {
+        margin-top: 25px;
+    }
+
+    .about-bottom h3 {
+        font-size: 17px;
+
+        line-height: 1.2;
+    }
+
+    .about-content > .about-image {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+    }
+
+    .about-content > .about-image > .about-image {
+        width: 50%;
+
+        display: block;
+    }
+
+    .about-content > .about-image img {
+        width: 100%;
+
+        max-width: none;
+
+        height: 220px;
+
+        object-fit: cover;
+
+        border-radius: 8px;
+    }
+
+
+    /* -----------------------------
+       EXPERIÊNCIAS QUE FICAM
+    ----------------------------- */
+
+    .experiences {
+        width: 100%;
+
+        padding: 55px 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+    .experiences-text {
+        width: 100%;
+
+        max-width: 600px;
+    }
+
+    .experiences-label {
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+    .experiences-text h2 {
+        font-size: clamp(30px, 8.5vw, 43px);
+
+        line-height: 1.05;
+    }
+
+    .experiences-text p {
+        width: 100%;
+
+        max-width: 600px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+    .experience-image {
+        width: 100%;
+
+        max-width: 600px;
+
+        height: 260px;
+    }
+
+    .experience-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* -----------------------------
+       DEPOIMENTOS
+    ----------------------------- */
+
+    .testimonials {
+        width: 100%;
+
+        padding: 0 20px 25px;
+    }
+
+    .section-title {
+        width: 100%;
+
+        gap: 12px;
+    }
+
+    .section-title h2 {
+        font-size: 19px;
+
+        text-align: center;
+
+        white-space: nowrap;
+    }
+
+    .testimonial-wrapper {
+        width: 100%;
+
+        padding: 0 38px;
+    }
+
+    .testimonial-slider {
+        width: 100%;
+
+        gap: 0;
+    }
+
+    .testimonial {
+        flex: 0 0 100%;
+
+        width: 100%;
+
+        height: auto;
+
+        min-height: 0;
+
+        padding: 5px;
+    }
+
+    .testimonial img {
+        width: 100%;
+
+        max-width: 100%;
+
+        max-height: none;
+
+        height: auto;
+
+        object-fit: contain;
+    }
+
+    .testimonial-arrow {
+        width: 32px;
+        height: 32px;
+
+        font-size: 24px;
+    }
+
+    .testimonial-arrow.left {
+        left: 2px;
+    }
+
+    .testimonial-arrow.right {
+        right: 2px;
+    }
+
+
+    /* -----------------------------
+       CONEXÕES
+    ----------------------------- */
+
+    .connections {
+        width: 100%;
+
+        padding: 35px 4% 40px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+    .connections-text {
+        width: 100%;
+
+        max-width: 600px;
+    }
+
+    .connections-label {
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+    .connections-text h2 {
+        font-size: clamp(32px, 9vw, 45px);
+
+        line-height: 1.05;
+    }
+
+    .connections-text p {
+        width: 100%;
+
+        max-width: 600px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+    .networking-image {
+        width: 100% !important;
+
+        max-width: 600px;
+
+        height: 260px !important;
+
+        margin: 0 auto !important;
+    }
+
+    .networking-image img {
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* -----------------------------
+       PALESTRANTES
+    ----------------------------- */
+
+    .speakers {
+        width: 100%;
+
+        padding: 55px 20px 35px;
+    }
+
+    .speakers-title {
+        margin-bottom: 25px;
+    }
+
+    .speakers-title h2 {
+        font-size: 23px;
+
+        line-height: 1.1;
+
+        text-align: center;
+    }
+
+    .speakers-wrapper {
+        width: 100%;
+
+        position: relative;
+
+        padding: 0 28px;
+    }
+
+    .speakers-slider {
+        width: 100%;
+
+        gap: 0;
+
+        padding: 5px 0 15px;
+    }
+
+    .speaker {
+        flex: 0 0 100%;
+
+        width: 100%;
+
+        padding: 0 10px;
+    }
+
+    .speaker img {
+        width: min(190px, 55vw);
+
+        height: min(190px, 55vw);
+    }
+
+    .speaker h3 {
+        font-size: 14px;
+
+        line-height: 1.25;
+    }
+
+    .speaker p {
+        width: 100%;
+
+        max-width: 330px;
+
+        font-size: 10px;
+
+        line-height: 1.5;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .speaker-arrow {
+        width: 34px;
+        height: 34px;
+
+        font-size: 24px;
+    }
+
+    .speaker-arrow.left {
+        left: 0;
+    }
+
+    .speaker-arrow.right {
+        right: 0;
+    }
+
+
+    /* -----------------------------
+       LOCAL
+    ----------------------------- */
+
+    .location {
+        width: 100%;
+
+        padding: 55px 20px;
+    }
+
+    .location-title {
+        gap: 10px;
+
+        margin-bottom: 25px;
+    }
+
+    .location-title span {
+        width: 35px;
+    }
+
+    .location-title h2 {
+        font-size: 25px;
+    }
+
+    .location-content {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .location-images {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1.1fr .9fr;
+
+        gap: 10px;
+    }
+
+    .location-images img {
+        width: 100%;
+
+        height: 220px;
+
+        object-fit: cover;
+    }
+
+    .location-images img:nth-child(2) {
+        height: 190px;
+    }
+
+    .location-info {
+        width: 100%;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .location-info h3 {
+        font-size: 32px;
+
+        line-height: 1.05;
+    }
+
+    .location-info p {
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+    .location-button {
+        display: inline-flex;
+
+        align-items: center;
+        justify-content: center;
+
+        max-width: 300px;
+
+        width: 100%;
+    }
+
+
+    /* -----------------------------
+       INFORMAÇÕES / FAQ / LISTAS
+    ----------------------------- */
+
+    .information {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        padding: 30px 20px;
+    }
+
+    .information-column {
+        width: 100%;
+
+        padding: 22px 0;
+
+        border-right: none;
+
+        border-bottom: 1px solid #c0aa91;
+    }
+
+    .information-column:last-child {
+        border-bottom: none;
+    }
+
+    .information-column h3 {
+        font-size: 16px;
+
+        line-height: 1.2;
+    }
+
+    .information-column ul {
+        width: 100%;
+
+        padding: 0;
+
+        margin: 0 0 8px;
+    }
+
+    .information-column li {
+        font-size: 10px;
+
+        line-height: 1.7;
+
+        overflow-wrap: anywhere;
+    }
+
+    .information-column a {
+        overflow-wrap: anywhere;
+    }
+
+    .faq-item button {
+        width: 100%;
+
+        min-height: 42px;
+
+        padding: 10px 5px;
+
+        font-size: 10px;
+
+        text-align: left;
+    }
+
+    .faq-answer {
+        width: 100%;
+
+        font-size: 10px;
+
+        line-height: 1.7;
+
+        overflow-wrap: anywhere;
+    }
+
+
+    /* -----------------------------
+       CTA ANTIGO / DATA
+    ----------------------------- */
+
+    .final-cta {
+        width: 100%;
+
+        padding: 12px 20px;
+    }
+
+    .final-cta > p {
+        font-size: 13px;
+
+        line-height: 1.4;
+    }
+
+
+    /* -----------------------------
+       PAGAMENTOS
+    ----------------------------- */
+
+    .pagamento-section {
+        width: 100%;
+
+        padding: 70px 20px;
+    }
+
+    .pagamento-header {
+        width: 100%;
+
+        margin-bottom: 45px;
+    }
+
+    .pagamento-header > span {
+        font-size: 8px;
+
+        letter-spacing: 3px;
+    }
+
+    .pagamento-header h2 {
+        font-size: clamp(40px, 12vw, 55px);
+
+        line-height: .95;
+    }
+
+    .pagamento-header p {
+        font-size: 11px;
+
+        line-height: 1.7;
+    }
+
+    .pagamento-cards {
+        width: 100%;
+
+        max-width: 480px;
+
+        margin: 0 auto;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+    .pagamento-card {
+        width: 100%;
+
+        min-height: 330px;
+
+        padding: 38px 22px;
+    }
+
+    .pagamento-destaque {
+        transform: none;
+    }
+
+    .pagamento-destaque:hover {
+        transform: translateY(-6px);
+    }
+
+    .pagamento-card-top strong {
+        font-size: 52px;
+    }
+
+    .pagamento-card h3 {
+        font-size: 23px;
+    }
+
+    .pagamento-card p {
+        font-size: 10px;
+
+        line-height: 1.7;
+    }
+
+    .pagamento-card a {
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+    .pagamento-footer {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 7px;
+
+        text-align: center;
+
+        line-height: 1.5;
+    }
+
+    .pagamento-footer i {
+        display: none;
+    }
+
+
+    /* -----------------------------
+       FOOTER
+    ----------------------------- */
+
+    .footer {
+        width: 100%;
+
+        padding: 40px 20px 20px;
+    }
+
+    .footer-content {
+        width: 100%;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 30px 20px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+
+        text-align: center;
+    }
+
+    .footer-brand img {
+        width: 170px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-description {
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+    .footer-column {
+        min-width: 0;
+    }
+
+    .footer-column h3,
+    .footer-realization span {
+        font-size: 11px;
+    }
+
+    .footer-column a {
+        font-size: 9px;
+
+        line-height: 1.6;
+
+        overflow-wrap: anywhere;
+    }
+
+    .footer-realization {
+        grid-column: 1 / -1;
+
+        text-align: center;
+    }
+
+    .footer-realization img {
+        width: 130px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-bottom {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+    .footer-bottom p,
+    .footer-bottom a {
+        font-size: 8px;
+
+        line-height: 1.5;
+
+        overflow-wrap: anywhere;
+    }
+
+
+    /* -----------------------------
+       WHATSAPP
+    ----------------------------- */
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+
+        right: 16px;
+        bottom: 16px;
+
+        font-size: 23px;
+    }
+
+    .whatsapp-float i {
+        font-size: 23px;
+    }
+}
+
+
+/* =====================================================
+   CELULAR PEQUENO — ATÉ 400px
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .hero {
+        min-height: 650px;
+    }
+
+    .hero-container {
+        min-height: 650px;
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cihof-small {
+        width: 155px;
+    }
+
+    .renaissance-logo {
+        width: 82vw;
+    }
+
+    .renaissance-text {
+        width: 72vw;
+    }
+
+    .countdown {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .countdown-box {
+        min-width: 45px;
+    }
+
+    .countdown-box span {
+        font-size: 25px;
+    }
+
+    .countdown-box small {
+        font-size: 5px;
+        letter-spacing: .5px;
+    }
+
+    .countdown-separator {
+        font-size: 18px;
+    }
+
+    .about-content > .about-image {
+        flex-direction: column;
+    }
+
+    .about-content > .about-image > .about-image {
+        width: 100%;
+    }
+
+    .about-content > .about-image img {
+        height: 240px;
+    }
+
+    .location-images {
+        grid-template-columns: 1fr;
+    }
+
+    .location-images img,
+    .location-images img:nth-child(2) {
+        height: 220px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand,
+    .footer-realization {
+        grid-column: auto;
+    }
+}
+
+/* =====================================================
+   AJUSTE DA SEÇÃO CONEXÕES NO CELULAR
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .connections {
+        padding: 55px 20px 65px !important;
+        gap: 30px !important;
+    }
+
+    .connections-text {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .connections-text h2 {
+        font-size: 42px !important;
+        line-height: 1.05 !important;
+        margin: 10px 0 20px;
+    }
+
+    .connections-text p {
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .networking-image {
+        width: 100% !important;
+        max-width: 600px !important;
+        height: 300px !important;
+        margin: 0 auto !important;
+        overflow: hidden;
+        border-radius: 12px !important;
+    }
+
+    .networking-image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center center !important;
+    }
+
+}
+/* =====================================================
+   RESPONSIVIDADE FINAL
+   RENAISSANCE SYMPOSIUM
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   769px até 1100px
+===================================================== */
+
+@media (min-width: 769px) and (max-width: 1100px) {
+
+    /* -------------------------------
+       GERAL
+    ------------------------------- */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+
+    /* -------------------------------
+       HEADER
+    ------------------------------- */
+
+    .header {
+        width: 100%;
+        padding: 0 4%;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 16px;
+    }
+
+    .navigation a {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .header-button {
+        padding: 10px 14px !important;
+    }
+
+
+    /* -------------------------------
+       HERO
+    ------------------------------- */
+
+    .hero {
+        width: 100%;
+        height: 560px;
+        min-height: 560px;
+    }
+
+    .hero-container {
+        width: 94%;
+        height: 100%;
+    }
+
+    .hero-text {
+        width: 320px;
+        left: 2%;
+    }
+
+    .cihof-small {
+        width: 210px;
+    }
+
+    .renaissance-container {
+        width: 370px;
+    }
+
+    .renaissance-logo {
+        width: 370px;
+    }
+
+    .renaissance-text {
+        width: 300px;
+    }
+
+
+    /* -------------------------------
+       ABOUT
+    ------------------------------- */
+
+    .about-section {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .about-content {
+        gap: 30px;
+    }
+
+    .about-text {
+        width: 48%;
+    }
+
+    .about-image {
+        width: 48%;
+    }
+
+
+    /* -------------------------------
+       EXPERIENCES
+    ------------------------------- */
+
+    .experiences {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 30px;
+    }
+
+    .experiences-text {
+        width: 48%;
+    }
+
+    .experience-image {
+        width: 48%;
+    }
+
+
+    /* -------------------------------
+       DEPOIMENTOS
+    ------------------------------- */
+
+    .testimonial {
+        flex: 0 0 calc(
+            (100% - 28px) / 3
+        );
+    }
+
+
+    /* -------------------------------
+       CONEXÕES
+    ------------------------------- */
+
+    .connections {
+        width: 100%;
+
+        padding: 45px 5%;
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        gap: 30px;
+
+        box-sizing: border-box;
+    }
+
+    .connections-text {
+        width: 55%;
+        max-width: 520px;
+    }
+
+    .connections-text h2 {
+        font-size: 34px;
+    }
+
+    .connections-text p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .networking-image {
+        width: 42% !important;
+
+        max-width: 380px;
+
+        height: 260px !important;
+
+        margin: 0 !important;
+
+        flex-shrink: 0;
+
+        overflow: hidden;
+    }
+
+    .networking-image img {
+        width: 100% !important;
+
+        height: 100% !important;
+
+        object-fit: cover !important;
+
+        object-position: center !important;
+    }
+
+
+    /* -------------------------------
+       PALESTRANTES
+    ------------------------------- */
+
+    .speakers {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .speaker {
+        flex: 0 0 calc(
+            (100% - 25px) / 2
+        );
+    }
+
+
+    /* -------------------------------
+       LOCAL
+    ------------------------------- */
+
+    .location {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .location-content {
+        width: 100%;
+        max-width: 1100px;
+
+        grid-template-columns:
+            1.2fr .8fr;
+
+        gap: 30px;
+    }
+
+    .location-images img {
+        height: 280px;
+    }
+
+    .location-images img:nth-child(2) {
+        height: 240px;
+    }
+
+
+    /* -------------------------------
+       INFORMAÇÕES
+    ------------------------------- */
+
+    .information {
+        grid-template-columns:
+            1fr 1fr 1fr;
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .information-column {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    /* -------------------------------
+       PAGAMENTOS
+    ------------------------------- */
+
+    .pagamento-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .pagamento-cards {
+        gap: 18px;
+    }
+
+    .pagamento-card {
+        min-height: 360px;
+        padding: 35px 20px;
+    }
+
+
+    /* -------------------------------
+       FOOTER
+    ------------------------------- */
+
+    .footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .footer-content {
+        grid-template-columns:
+            1.3fr
+            .9fr
+            1.3fr
+            .9fr;
+
+        gap: 18px;
+    }
+
+}
+
+
+/* =====================================================
+   CELULAR
+   ATÉ 768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+
+    /* =================================================
+       GERAL
+    ================================================= */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+
+    /* =================================================
+       HEADER
+    ================================================= */
+
+    .header {
+        width: 100%;
+
+        height: 65px;
+
+        padding: 0 20px;
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        z-index: 1000;
+    }
+
+    .header-logo {
+        width: 140px;
+        max-width: 45vw;
+    }
+
+
+    /* =================================================
+       BOTÃO MENU
+    ================================================= */
+
+    .menu-button {
+        display: flex !important;
+
+        position: fixed !important;
+
+        top: 15px;
+        right: 18px;
+
+        width: 44px;
+        height: 44px;
+
+        padding: 0;
+
+        border: 1px solid #d9a441;
+
+        border-radius: 4px;
+
+        background: #031b12;
+
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+
+        gap: 6px;
+
+        cursor: pointer;
+
+        z-index: 10000;
+    }
+
+    .menu-button span {
+        display: block;
+
+        width: 22px;
+        height: 2px;
+
+        background: #d9a441;
+    }
+
+
+    /* =================================================
+       MENU FECHADO
+    ================================================= */
+
+    .navigation {
+        position: fixed !important;
+
+        top: 0 !important;
+
+        right: -100% !important;
+
+        left: auto !important;
+
+        width: 100% !important;
+
+        max-width: none !important;
+
+        height: 100vh !important;
+
+        padding: 100px 30px 40px !important;
+
+        background: #031b12 !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+
+        justify-content: flex-start !important;
+
+        gap: 20px !important;
+
+        overflow-y: auto;
+
+        transition: right .35s ease !important;
+
+        z-index: 9999 !important;
+    }
+
+
+    /* =================================================
+       MENU ABERTO
+    ================================================= */
+
+    .navigation.active {
+        right: 0 !important;
+    }
+
+
+    .navigation a {
+        width: 100%;
+
+        padding: 10px 0;
+
+        text-align: center;
+
+        font-size: 11px;
+
+        letter-spacing: 2px;
+
+        color: #f5f0e9;
+    }
+
+
+    .navigation .header-button {
+        width: 100%;
+
+        max-width: 350px;
+
+        margin-top: 15px;
+
+        padding: 15px 20px !important;
+
+        background: #d59a3a;
+
+        color: #031b12;
+
+        text-align: center;
+    }
+
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    .hero {
+        width: 100%;
+
+        height: auto;
+
+        min-height: 680px;
+
+        overflow: hidden;
+    }
+
+    .hero-container {
+        width: 100%;
+
+        min-height: 680px;
+
+        height: auto;
+
+        padding: 95px 20px 50px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: flex-start;
+    }
+
+
+    .hero-text {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: 100%;
+
+        height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .cihof-small {
+        width: 180px;
+
+        max-width: 70vw;
+    }
+
+
+    .hero-text .gold-button {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: 100%;
+
+        max-width: 290px;
+
+        min-width: 0;
+
+        margin-top: 25px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+    }
+
+
+    .renaissance-container {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        transform: none;
+
+        width: 100%;
+
+        height: auto;
+
+        margin-top: 35px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .renaissance-logo {
+        width: min(85vw, 350px);
+
+        height: auto;
+    }
+
+
+    .renaissance-text {
+        width: min(75vw, 290px);
+
+        height: auto;
+    }
+
+
+    /* =================================================
+       CONTAGEM
+    ================================================= */
+
+    .countdown {
+        width: 100%;
+
+        margin: 25px auto;
+    }
+
+    .countdown-container {
+        width: 100%;
+
+        gap: 4px;
+
+        justify-content: center;
+    }
+
+    .countdown-box {
+        min-width: 55px;
+    }
+
+    .countdown-box span {
+        font-size: 31px;
+    }
+
+    .countdown-box small {
+        font-size: 6px;
+
+        letter-spacing: 1px;
+    }
+
+    .countdown-separator {
+        font-size: 21px;
+    }
+
+
+    /* =================================================
+       ABOUT / EXPERIÊNCIA
+    ================================================= */
+
+    .about-section {
+        width: 100%;
+
+        padding: 55px 20px;
+    }
+
+    .about-content {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 35px;
+    }
+
+    .about-text {
+        width: 100%;
+
+        max-width: 600px;
+
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 40px;
+
+        line-height: 1;
+    }
+
+    .about-description {
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+    .about-image {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+    }
+
+    .about-image img {
+        width: 100%;
+
+        height: 230px;
+
+        object-fit: cover;
+    }
+
+
+    /* =================================================
+       EXPERIÊNCIAS QUE FICAM
+    ================================================= */
+
+    .experiences {
+        width: 100%;
+
+        padding: 55px 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+    .experiences-text {
+        width: 100%;
+
+        max-width: 600px;
+    }
+
+    .experiences-text h2 {
+        font-size: 40px;
+
+        line-height: 1.05;
+    }
+
+    .experiences-text p {
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+    .experience-image {
+        width: 100%;
+
+        max-width: 600px;
+
+        height: 260px;
+    }
+
+
+    /* =================================================
+       DEPOIMENTOS
+    ================================================= */
+
+    .testimonials {
+        width: 100%;
+
+        padding: 50px 20px;
+    }
+
+    .testimonial-wrapper {
+        width: 100%;
+
+        padding: 0 35px;
+
+        position: relative;
+    }
+
+    .testimonial-slider {
+        width: 100%;
+
+        gap: 0;
+    }
+
+    .testimonial {
+        flex: 0 0 100%;
+
+        width: 100%;
+    }
+
+    .testimonial-arrow {
+        width: 32px;
+
+        height: 32px;
+
+        font-size: 22px;
+    }
+
+    .testimonial-arrow.left {
+        left: 0;
+    }
+
+    .testimonial-arrow.right {
+        right: 0;
+    }
+
+
+    /* =================================================
+       CONEXÕES
+    ================================================= */
+
+    .connections {
+        width: 100%;
+
+        padding: 55px 20px 60px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 30px;
+
+        text-align: center;
+
+        overflow: hidden;
+    }
+
+
+    .connections-text {
+        width: 100%;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+
+    .connections-label {
+        display: block;
+
+        width: 100%;
+
+        margin-bottom: 12px;
+
+        font-size: 10px;
+
+        letter-spacing: 2px;
+
+        text-align: center;
+    }
+
+
+    .connections-text h2 {
+        width: 100%;
+
+        margin: 0 0 18px;
+
+        font-size: 40px;
+
+        line-height: 1.05;
+
+        text-align: center;
+    }
+
+
+    .connections-text p {
+        width: 100%;
+
+        max-width: 540px;
+
+        margin: 0 auto;
+
+        font-size: 13px;
+
+        line-height: 1.7;
+
+        text-align: center;
+    }
+
+
+    .networking-image {
+        width: 100% !important;
+
+        max-width: 600px !important;
+
+        height: 300px !important;
+
+        margin: 0 auto !important;
+
+        padding: 0 !important;
+
+        flex: none;
+
+        overflow: hidden !important;
+
+        border: 2px solid #d9a441 !important;
+
+        border-radius: 20px !important;
+    }
+
+
+    .networking-image img {
+        display: block;
+
+        width: 100% !important;
+
+        height: 100% !important;
+
+        max-width: none !important;
+
+        object-fit: cover !important;
+
+        object-position: center center !important;
+    }
+
+
+    /* =================================================
+       PALESTRANTES
+    ================================================= */
+
+    .speakers {
+        width: 100%;
+
+        padding: 55px 20px 40px;
+    }
+
+    .speakers-title {
+        margin-bottom: 30px;
+    }
+
+    .speakers-title h2 {
+        font-size: 25px;
+
+        line-height: 1.1;
+
+        text-align: center;
+    }
+
+    .speakers-wrapper {
+        width: 100%;
+
+        position: relative;
+    }
+
+    .speakers-slider {
+        width: 100%;
+
+        gap: 0;
+    }
+
+    .speaker {
+        flex: 0 0 100%;
+
+        width: 100%;
+
+        padding: 0 25px;
+
+        box-sizing: border-box;
+    }
+
+    .speaker img {
+        width: 180px;
+
+        height: 180px;
+
+        margin: 0 auto;
+
+        object-fit: cover;
+    }
+
+    .speaker h3 {
+        font-size: 14px;
+
+        text-align: center;
+    }
+
+    .speaker p {
+        max-width: 300px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 10px;
+
+        line-height: 1.5;
+
+        text-align: center;
+    }
+
+    .speaker-arrow {
+        width: 34px;
+
+        height: 34px;
+
+        font-size: 24px;
+    }
+
+    .speaker-arrow.left {
+        left: 0;
+    }
+
+    .speaker-arrow.right {
+        right: 0;
+    }
+
+
+    /* =================================================
+       LOCAL
+    ================================================= */
+
+    .location {
+        width: 100%;
+
+        padding: 55px 20px;
+    }
+
+    .location-content {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .location-images {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1.1fr .9fr;
+
+        gap: 10px;
+    }
+
+    .location-images img {
+        width: 100%;
+
+        height: 230px;
+
+        object-fit: cover;
+    }
+
+    .location-images img:nth-child(2) {
+        height: 195px;
+    }
+
+    .location-info {
+        width: 100%;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .location-info h3 {
+        font-size: 34px;
+
+        line-height: 1.05;
+    }
+
+    .location-info p {
+        font-size: 12px;
+
+        line-height: 1.7;
+    }
+
+    .location-button {
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+
+    /* =================================================
+       INFORMAÇÕES / FAQ
+    ================================================= */
+
+    .information {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        padding: 35px 20px;
+    }
+
+    .information-column {
+        width: 100%;
+
+        padding: 25px 0;
+
+        border-right: none;
+
+        border-bottom: 1px solid #c0aa91;
+    }
+
+    .information-column:last-child {
+        border-bottom: none;
+    }
+
+    .information-column h3 {
+        font-size: 16px;
+
+        margin-bottom: 15px;
+    }
+
+    .information-column ul {
+        font-size: 11px;
+
+        line-height: 1.8;
+    }
+
+    .faq-item button {
+        width: 100%;
+
+        padding: 12px 5px;
+
+        font-size: 11px;
+
+        line-height: 1.4;
+    }
+
+    .faq-answer {
+        font-size: 10px;
+
+        line-height: 1.7;
+    }
+
+
+    /* =================================================
+       PAGAMENTOS / LOTES
+    ================================================= */
+
+    .pagamento-section {
+        width: 100%;
+
+        padding: 75px 20px;
+    }
+
+    .pagamento-header {
+        width: 100%;
+
+        margin-bottom: 50px;
+    }
+
+    .pagamento-header h2 {
+        font-size: 48px;
+
+        line-height: .95;
+    }
+
+    .pagamento-header p {
+        font-size: 11px;
+
+        line-height: 1.7;
+    }
+
+    .pagamento-cards {
+        width: 100%;
+
+        max-width: 500px;
+
+        margin: 0 auto;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .pagamento-card {
+        width: 100%;
+
+        min-height: 340px;
+
+        padding: 40px 25px;
+    }
+
+    .pagamento-destaque {
+        transform: none;
+    }
+
+    .pagamento-destaque:hover {
+        transform: translateY(-5px);
+    }
+
+    .pagamento-card-top strong {
+        font-size: 52px;
+    }
+
+    .pagamento-card h3 {
+        font-size: 23px;
+    }
+
+    .pagamento-card p {
+        font-size: 10px;
+
+        line-height: 1.7;
+    }
+
+    .pagamento-card a {
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+    .pagamento-footer {
+        width: 100%;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        line-height: 1.8;
+    }
+
+
+    /* =================================================
+       CTA
+    ================================================= */
+
+    .final-cta {
+        width: 100%;
+
+        padding: 20px;
+    }
+
+    .final-items {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 15px;
+    }
+
+
+    /* =================================================
+       FOOTER
+    ================================================= */
+
+    .footer {
+        width: 100%;
+
+        padding: 40px 20px 20px;
+    }
+
+    .footer-content {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 30px 20px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+
+        text-align: center;
+    }
+
+    .footer-column {
+        min-width: 0;
+    }
+
+    .footer-column h3,
+    .footer-realization span {
+        font-size: 11px;
+    }
+
+    .footer-column a {
+        font-size: 9px;
+
+        line-height: 1.6;
+
+        word-break: break-word;
+    }
+
+    .footer-realization {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+    .footer-bottom p,
+    .footer-bottom a {
+        font-size: 8px;
+
+        line-height: 1.5;
+    }
+
+
+    /* =================================================
+       WHATSAPP
+    ================================================= */
+
+    .whatsapp-float {
+        width: 50px;
+
+        height: 50px;
+
+        right: 16px;
+
+        bottom: 16px;
+
+        font-size: 22px;
+    }
+
+}
+
+
+/* =====================================================
+   CELULAR PEQUENO
+   ATÉ 430px
+===================================================== */
+
+@media (max-width: 430px) {
+
+    .hero {
+        min-height: 650px;
+    }
+
+    .hero-container {
+        min-height: 650px;
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cihof-small {
+        width: 155px;
+    }
+
+    .renaissance-logo {
+        width: 82vw;
+    }
+
+    .renaissance-text {
+        width: 72vw;
+    }
+
+    .hero-text .gold-button {
+        max-width: 270px;
+    }
+
+
+    /* CONTAGEM */
+
+    .countdown-container {
+        gap: 2px;
+    }
+
+    .countdown-box {
+        min-width: 48px;
+    }
+
+    .countdown-box span {
+        font-size: 27px;
+    }
+
+    .countdown-box small {
+        font-size: 5px;
+
+        letter-spacing: .5px;
+    }
+
+    .countdown-separator {
+        font-size: 18px;
+    }
+
+
+    /* ABOUT */
+
+    .about-image {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img {
+        height: 240px;
+    }
+
+
+    /* CONEXÕES */
+
+    .connections {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .connections-text h2 {
+        font-size: 34px;
+    }
+
+    .connections-text p {
+        font-size: 11px;
+    }
+
+    .networking-image {
+        height: 230px !important;
+    }
+
+
+    /* PALESTRANTES */
+
+    .speaker img {
+        width: 170px;
+
+        height: 170px;
+    }
+
+
+    /* LOCAL */
+
+    .location-images {
+        grid-template-columns: 1fr;
+    }
+
+    .location-images img,
+    .location-images img:nth-child(2) {
+        height: 230px;
+    }
+
+
+    /* PAGAMENTOS */
+
+    .pagamento-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .pagamento-card {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand,
+    .footer-realization {
+        grid-column: auto;
+    }
+
+    .footer-column {
+        text-align: center;
+
+        align-items: center;
+    }
+
+}
+
+/* =====================================================
+   AJUSTE FINAL — TAMANHO DOS TEXTOS NO CELULAR
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* ==============================
+       TEXTO DA EXPERIÊNCIA
+    ============================== */
+
+    .about-description {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+    }
+
+    .about-bottom h3 {
+        font-size: 21px !important;
+    }
+
+    .about-bottom p {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+    }
+
+
+    /* ==============================
+       EXPERIÊNCIAS
+    ============================== */
+
+    .experiences-label {
+        font-size: 13px !important;
+    }
+
+    .experiences-text p {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+    }
+
+    .experiences-button {
+        font-size: 13px !important;
+    }
+
+
+    /* ==============================
+       CONEXÕES
+    ============================== */
+
+    .connections-label {
+        font-size: 13px !important;
+        letter-spacing: 2px !important;
+    }
+
+    .connections-text p {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+    }
+
+
+    /* ==============================
+       PALESTRANTES
+    ============================== */
+
+    .speaker h3 {
+        font-size: 15px !important;
+        line-height: 1.3 !important;
+    }
+
+    .speaker p {
+        max-width: 330px !important;
+
+        font-size: 13px !important;
+
+        line-height: 1.6 !important;
+    }
+
+
+    /* ==============================
+       LOCAL
+    ============================== */
+
+    .location-label {
+        font-size: 11px !important;
+    }
+
+    .location-info p {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+    .location-button {
+        font-size: 11px !important;
+    }
+
+
+    /* ==============================
+       FAQ
+    ============================== */
+
+    .information-column h3 {
+        font-size: 19px !important;
+    }
+
+    .faq-item button {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+
+        padding: 9px 10px !important;
+    }
+
+    .faq-answer {
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+
+        padding: 10px !important;
+    }
+
+
+    /* ==============================
+       LISTAS
+    ============================== */
+
+    .information-column ul {
+        font-size: 14px !important;
+        line-height: 1.8 !important;
+    }
+
+    .outline-button {
+        font-size: 11px !important;
+        padding: 9px 20px !important;
+    }
+
+
+    /* ==============================
+       PAGAMENTOS
+    ============================== */
+
+    .pagamento-header > span {
+        font-size: 11px !important;
+    }
+
+    .pagamento-header p {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+    .pagamento-card-top span {
+        font-size: 10px !important;
+    }
+
+    .pagamento-card h3 {
+        font-size: 26px !important;
+    }
+
+    .pagamento-card p {
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+    }
+
+    .pagamento-card a {
+        font-size: 11px !important;
+    }
+
+
+    /* ==============================
+       FOOTER
+    ============================== */
+
+    .footer-tagline {
+        font-size: 9px !important;
+    }
+
+    .footer-description {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+    }
+
+    .footer-column h3 {
+        font-size: 16px !important;
+    }
+
+    .footer-column a {
+        font-size: 12px !important;
+        line-height: 1.7 !important;
+    }
+
+    .footer-bottom p,
+    .footer-bottom a {
+        font-size: 10px !important;
+        line-height: 1.6 !important;
+    }
+
+}
+
+
+/* =====================================================
+   CELULAR PEQUENO
+   ATÉ 430px
+===================================================== */
+
+@media (max-width: 430px) {
+
+    .about-description {
+        font-size: 15px !important;
+    }
+
+    .about-bottom p {
+        font-size: 14px !important;
+    }
+
+    .experiences-text p {
+        font-size: 15px !important;
+    }
+
+    .connections-text p {
+        font-size: 15px !important;
+    }
+
+    .speaker h3 {
+        font-size: 14px !important;
+    }
+
+    .speaker p {
+        font-size: 12px !important;
+    }
+
+    .location-info p {
+        font-size: 13px !important;
+    }
+
+    .faq-item button {
+        font-size: 13px !important;
+    }
+
+    .faq-answer {
+        font-size: 12px !important;
+    }
+
+    .information-column ul {
+        font-size: 13px !important;
+    }
+
+    .pagamento-header p {
+        font-size: 13px !important;
+    }
+
+    .pagamento-card p {
+        font-size: 12px !important;
+    }
+
+    .footer-column a {
+        font-size: 11px !important;
+    }
+
+}
+/* =====================================================
+   TEXTO MAIOR NO CELULAR
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* ==============================
+       EXPERIÊNCIA
+    ============================== */
+
+    .about-description {
+        font-size: 18px !important;
+        line-height: 1.7 !important;
+    }
+
+    .about-bottom h3 {
+        font-size: 23px !important;
+    }
+
+    .about-bottom p {
+        font-size: 17px !important;
+        line-height: 1.7 !important;
+    }
+
+
+    /* ==============================
+       EXPERIÊNCIAS QUE FICAM
+    ============================== */
+
+    .experiences-text p {
+        font-size: 18px !important;
+        line-height: 1.7 !important;
+    }
+
+    .experiences-label {
+        font-size: 13px !important;
+    }
+
+
+    /* ==============================
+       CONEXÕES
+    ============================== */
+
+    .connections-text p {
+        font-size: 18px !important;
+        line-height: 1.7 !important;
+    }
+
+    .connections-label {
+        font-size: 13px !important;
+    }
+
+
+    /* ==============================
+       DEPOIMENTOS
+    ============================== */
+
+    .section-title h2 {
+        font-size: 22px !important;
+    }
+
+
+    /* ==============================
+       PALESTRANTES
+    ============================== */
+
+    .speaker h3 {
+        font-size: 18px !important;
+        line-height: 1.35 !important;
+    }
+
+    .speaker p {
+        max-width: 340px !important;
+
+        font-size: 15px !important;
+
+        line-height: 1.65 !important;
+    }
+
+
+    /* ==============================
+       LOCAL
+    ============================== */
+
+    .location-info h3 {
+        font-size: 38px !important;
+    }
+
+    .location-info p {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+    }
+
+
+    /* ==============================
+       FAQ / INFORMAÇÕES
+    ============================== */
+
+    .information-column h3 {
+        font-size: 21px !important;
+    }
+
+    .information-column ul {
+        font-size: 16px !important;
+        line-height: 1.8 !important;
+    }
+
+    .faq-item button {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+
+        padding: 16px 5px !important;
+    }
+
+    .faq-answer {
+        font-size: 15px !important;
+        line-height: 1.8 !important;
+    }
+
+
+    /* ==============================
+       LOTES / PAGAMENTO
+    ============================== */
+
+    .pagamento-header p {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+    }
+
+    .pagamento-card h3 {
+        font-size: 28px !important;
+    }
+
+    .pagamento-card p {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+
+    .pagamento-card a {
+        font-size: 13px !important;
+    }
+
+
+    /* ==============================
+       BOTÕES
+    ============================== */
+
+    .gold-button {
+        font-size: 13px !important;
+    }
+
+    .location-button {
+        font-size: 13px !important;
+    }
+
+    .outline-button {
+        font-size: 13px !important;
+    }
+
+
+    /* ==============================
+       FOOTER
+    ============================== */
+
+    .footer-description {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+
+    .footer-column h3 {
+        font-size: 17px !important;
+    }
+
+    .footer-column a {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+    .footer-bottom p,
+    .footer-bottom a {
+        font-size: 11px !important;
+        line-height: 1.7 !important;
+    }
+
+}
+
+
+/* =====================================================
+   CELULAR PEQUENO
+===================================================== */
+
+@media (max-width: 430px) {
+
+    .about-description {
+        font-size: 17px !important;
+    }
+
+    .about-bottom p {
+        font-size: 16px !important;
+    }
+
+    .experiences-text p {
+        font-size: 17px !important;
+    }
+
+    .connections-text p {
+        font-size: 17px !important;
+    }
+
+    .speaker h3 {
+        font-size: 17px !important;
+    }
+
+    .speaker p {
+        font-size: 14px !important;
+    }
+
+    .location-info p {
+        font-size: 15px !important;
+    }
+
+    .information-column ul {
+        font-size: 15px !important;
+    }
+
+    .faq-item button {
+        font-size: 15px !important;
+    }
+
+    .faq-answer {
+        font-size: 14px !important;
+    }
+
+    .pagamento-header p {
+        font-size: 15px !important;
+    }
+
+    .pagamento-card p {
+        font-size: 14px !important;
+    }
+
+    .footer-description {
+        font-size: 14px !important;
+    }
+
+    .footer-column a {
+        font-size: 13px !important;
+    }
+
+}
+/* =====================================================
+   AJUSTE DE FONTE — CELULAR
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* EXPERIÊNCIA */
+
+    .about-description {
+        font-size: 20px !important;
+        line-height: 1.7 !important;
+    }
+
+    .about-bottom h3 {
+        font-size: 25px !important;
+    }
+
+    .about-bottom p {
+        font-size: 18px !important;
+        line-height: 1.7 !important;
+    }
+
+
+    /* EXPERIÊNCIAS QUE FICAM */
+
+    .experiences-text p {
+        font-size: 20px !important;
+        line-height: 1.7 !important;
+    }
+
+
+    /* CONEXÕES */
+
+    .connections-text p {
+        font-size: 20px !important;
+        line-height: 1.7 !important;
+    }
+
+    .connections-label {
+        font-size: 14px !important;
+    }
+
+
+    /* DEPOIMENTOS */
+
+    .section-title h2 {
+        font-size: 24px !important;
+    }
+
+
+    /* PALESTRANTES */
+
+    .speaker h3 {
+        font-size: 20px !important;
+        line-height: 1.35 !important;
+    }
+
+    .speaker p {
+        max-width: 350px !important;
+
+        font-size: 17px !important;
+
+        line-height: 1.65 !important;
+    }
+
+
+    /* LOCAL */
+
+    .location-info h3 {
+        font-size: 40px !important;
+    }
+
+    .location-info p {
+        font-size: 18px !important;
+        line-height: 1.7 !important;
+    }
+
+
+    /* FAQ */
+
+    .information-column h3 {
+        font-size: 23px !important;
+    }
+
+    .information-column ul {
+        font-size: 18px !important;
+        line-height: 1.8 !important;
+    }
+
+    .faq-item button {
+        font-size: 18px !important;
+        line-height: 1.5 !important;
+
+        padding: 17px 5px !important;
+    }
+
+    .faq-answer {
+        font-size: 17px !important;
+        line-height: 1.8 !important;
+    }
+
+
+    /* PAGAMENTOS */
+
+    .pagamento-header p {
+        font-size: 18px !important;
+        line-height: 1.7 !important;
+    }
+
+    .pagamento-card h3 {
+        font-size: 30px !important;
+    }
+
+    .pagamento-card p {
+        font-size: 17px !important;
+        line-height: 1.7 !important;
+    }
+
+
+    /* BOTÕES */
+
+    .gold-button {
+        font-size: 14px !important;
+    }
+
+    .location-button {
+        font-size: 14px !important;
+    }
+
+    .outline-button {
+        font-size: 14px !important;
+    }
+
+
+    /* FOOTER */
+
+    .footer-description {
+        font-size: 17px !important;
+        line-height: 1.7 !important;
+    }
+
+    .footer-column h3 {
+        font-size: 19px !important;
+    }
+
+    .footer-column a {
+        font-size: 16px !important;
+        line-height: 1.7 !important;
+    }
+
+    .footer-bottom p,
+    .footer-bottom a {
+        font-size: 12px !important;
+        line-height: 1.7 !important;
+    }
+
+}
+
+
+/* =====================================================
+   CELULAR PEQUENO
+===================================================== */
+
+@media (max-width: 430px) {
+
+    .about-description {
+        font-size: 18px !important;
+    }
+
+    .about-bottom p {
+        font-size: 17px !important;
+    }
+
+    .experiences-text p {
+        font-size: 18px !important;
+    }
+
+    .connections-text p {
+        font-size: 18px !important;
+    }
+
+    .speaker h3 {
+        font-size: 18px !important;
+    }
+
+    .speaker p {
+        font-size: 16px !important;
+    }
+
+    .location-info p {
+        font-size: 17px !important;
+    }
+
+    .information-column ul {
+        font-size: 17px !important;
+    }
+
+    .faq-item button {
+        font-size: 17px !important;
+    }
+
+    .faq-answer {
+        font-size: 16px !important;
+    }
+
+    .pagamento-header p {
+        font-size: 17px !important;
+    }
+
+    .pagamento-card p {
+        font-size: 16px !important;
+    }
+
+    .footer-description {
+        font-size: 16px !important;
+    }
+
+    .footer-column a {
+        font-size: 15px !important;
+    }
+
+}
+/* =====================================================
+   CORREÇÃO DA SEÇÃO O LOCAL
+   CELULAR E TABLET
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* SEÇÃO LOCAL */
+
+    .location {
+        width: 100% !important;
+
+        padding: 60px 20px 65px !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+
+        justify-content: center !important;
+
+        box-sizing: border-box !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* ==============================
+       TÍTULO O LOCAL
+    ============================== */
+
+    .location-title {
+        width: 100% !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        justify-content: center !important;
+
+        gap: 18px !important;
+
+        margin: 0 0 35px !important;
+
+        position: relative !important;
+
+        order: 1 !important;
+    }
+
+
+    .location-title h2 {
+        margin: 0 !important;
+
+        font-size: 38px !important;
+
+        line-height: 1 !important;
+
+        text-align: center !important;
+
+        white-space: nowrap !important;
+    }
+
+
+    .location-title span {
+        display: block !important;
+
+        width: 45px !important;
+
+        height: 1px !important;
+
+        background: #d9a441 !important;
+
+        flex-shrink: 0 !important;
+    }
+
+
+    /* ==============================
+       ÁREA DAS IMAGENS
+    ============================== */
+
+    .location-content {
+        width: 100% !important;
+
+        max-width: 600px !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+
+        gap: 30px !important;
+
+        margin: 0 auto !important;
+
+        order: 2 !important;
+    }
+
+
+    /* ==============================
+       IMAGENS
+    ============================== */
+
+    .location-images {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns: 1fr 1fr !important;
+
+        gap: 12px !important;
+
+        margin: 0 !important;
+    }
+
+
+    .location-images img {
+        width: 100% !important;
+
+        height: 250px !important;
+
+        display: block !important;
+
+        object-fit: cover !important;
+
+        border-radius: 12px !important;
+    }
+
+
+    .location-images img:nth-child(2) {
+        height: 250px !important;
+    }
+
+
+    /* ==============================
+       INFORMAÇÕES DO LOCAL
+    ============================== */
+
+    .location-info {
+        width: 100% !important;
+
+        max-width: 500px !important;
+
+        margin: 0 auto !important;
+
+        text-align: center !important;
+
+        order: 3 !important;
+    }
+
+
+    .location-info h3 {
+        font-size: 32px !important;
+
+        line-height: 1.05 !important;
+
+        margin-bottom: 12px !important;
+    }
+
+
+    .location-info p {
+        font-size: 16px !important;
+
+        line-height: 1.7 !important;
+
+        margin-bottom: 8px !important;
+    }
+
+
+    .location-button {
+        width: 100% !important;
+
+        max-width: 300px !important;
+
+        margin: 20px auto 0 !important;
+
+        display: flex !important;
+
+        align-items: center !important;
+
+        justify-content: center !important;
+    }
+
+}
+
+
+/* =====================================================
+   CELULAR PEQUENO
+===================================================== */
+
+@media (max-width: 430px) {
+
+    .location {
+        padding: 50px 15px 55px !important;
+    }
+
+
+    .location-title {
+        gap: 12px !important;
+
+        margin-bottom: 28px !important;
+    }
+
+
+    .location-title h2 {
+        font-size: 32px !important;
+    }
+
+
+    .location-title span {
+        width: 35px !important;
+    }
+
+
+    .location-images {
+        gap: 10px !important;
+    }
+
+
+    .location-images img,
+    .location-images img:nth-child(2) {
+        height: 220px !important;
+
+        border-radius: 10px !important;
+    }
+
+
+    .location-info h3 {
+        font-size: 29px !important;
+    }
+
+
+    .location-info p {
+        font-size: 15px !important;
+    }
+
+}
+
+/* =====================================================
+   HOTÉIS E PONTOS TURÍSTICOS — CELULAR
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* TÍTULOS */
+
+    .information-column h3 {
+        font-size: 28px !important;
+        line-height: 1.15 !important;
+        margin-bottom: 25px !important;
+    }
+
+
+    /* LISTA */
+
+    .information-column ul {
+        font-size: 18px !important;
+        line-height: 1.8 !important;
+    }
+
+
+    /* CADA ITEM */
+
+    .information-column li {
+        font-size: 18px !important;
+        line-height: 1.8 !important;
+        margin-bottom: 5px !important;
+    }
+
+
+    /* LINKS DOS HOTÉIS */
+
+    .information-column li a {
+        font-size: 18px !important;
+    }
+
+}
+
+
+/* =====================================================
+   CELULAR PEQUENO
+===================================================== */
+
+@media (max-width: 430px) {
+
+    .information-column h3 {
+        font-size: 25px !important;
+        line-height: 1.15 !important;
+    }
+
+
+    .information-column ul {
+        font-size: 17px !important;
+        line-height: 1.8 !important;
+    }
+
+
+    .information-column li {
+        font-size: 17px !important;
+        line-height: 1.8 !important;
+    }
+
+
+    .information-column li a {
+        font-size: 17px !important;
+    }
+
+}
