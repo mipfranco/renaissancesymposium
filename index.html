@@ -1,1347 +1,873 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Renaissance Symposium + CIHOF, em Floripa. A estética do futuro já começou. 30 e 31 de outubro de 2026.">
+  <title>Renaissance Symposium + CIHOF | Em Floripa</title>
 
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <title>
-        Renaissance Symposium
-    </title>
-
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<header class="site-header">
 
-<!-- =====================================================
-     HEADER
-===================================================== -->
-
-<header class="header">
-
-    <a href="#inicio"
-       class="header-logo">
-
-        
-
+    <a class="header-brand" href="#inicio">
+        <img src="assets/renaissance.png" alt="Renaissance">
     </a>
 
-
-    <button
-        class="menu-button"
-        id="menuButton">
-
-        ☰
-
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
     </button>
 
-
-    <nav class="navigation" id="navigation">
-
-        <a href="#inicio">INÍCIO</a>
-        <a href="#experiencia">EXPERIÊNCIA</a>
-        <a href="#depoimentos">DEPOIMENTOS</a>
-        <a href="#palestrantes">PALESTRANTES</a>
-        <a href="#local">LOCAL</a>
-        <a href="#contato">CONTATO</a>
-
-
-
-        <a href="#inscricao" class="header-button">
-            GARANTA SUA INSCRIÇÃO
-        </a>
-
+    <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+        <a href="#conceito">Conceito</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#palestrantes">Palestrantes</a>
+        <a href="#cirurgias">Cirurgias</a>
+        <a href="#conexoes">Conexões</a>
+        <a href="#programacao">Programação</a>
+        <a href="#floripa">Floripa</a>
+        <a href="#faq">FAQ</a>
     </nav>
+
+    <a class="header-button"
+       href="https://pay.kiwify.com.br/s8U8EQf"
+       target="_blank"
+       rel="noopener noreferrer">
+        Inscreva-se
+    </a>
 
 </header>
 
+<main>
 
-
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<section class="hero" id="inicio">
-
-    <div class="hero-background"></div>
-
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
+    <div class="hero-bracket bracket-left">[</div>
+    <div class="hero-bracket bracket-right">]</div>
 
-    <div class="hero-container">
+    <div class="hero-content reveal">
+      <div class="hero-logos">
+        <img src="assets/renaissance.png" class="hero-ren" alt="Renaissance">
+        <span class="hero-plus">+</span>
+        <img src="assets/cihof.png" class="hero-cihof" alt="CIHOF">
+      </div>
 
-        <!-- CIHOF À ESQUERDA -->
-       <div class="hero-text">
+      <p class="hero-event">RENAISSANCE SYMPOSIUM + CIHOF, EM FLORIPA</p>
 
-    <div class="cihof-small">
+      <h1>A estética do futuro <em>já começou.</em></h1>
 
-        <img
-            src="assets/logo_CIHOF2.png"
-            alt="CIHOF">
+      <p class="hero-description">
+        Dois dias para viver uma nova experiência entre ciência,
+        estética regenerativa, saúde integrativa, wellness,
+        inovação e cirurgia estética da face.
+      </p>
 
+      <div class="hero-details">
+        <span>📍 Florianópolis – SC</span>
+        <i></i>
+        <span>📅 30 e 31 de outubro de 2026</span>
+      </div>
+
+      <a class="button button-gold hero-cta" href="https://pay.kiwify.com.br/s8U8EQf" target="_blank" rel="noopener noreferrer">
+        GARANTA SUA INSCRIÇÃO <b>↓</b>
+      </a>
+
+      <div class="hero-lots">
+        <a href="https://pay.kiwify.com.br/s8U8EQf" target="_blank" rel="noopener noreferrer">
+          <strong>1º LOTE</strong><small>VALOR ESPECIAL</small>
+        </a>
+        <a href="https://pay.kiwify.com.br/MAZ9Kqg" target="_blank" rel="noopener noreferrer">
+          <strong>2º LOTE</strong><small>VALOR ESPECIAL</small>
+        </a>
+      </div>
     </div>
+  </section>
 
-    <a
-        href="#inscricao"
-        class="gold-button">
+  <!-- CONCEITO -->
+  <section class="future-section" id="conceito">
 
-        VIVA ESSA EXPERIÊNCIA
+    <div class="future-background"></div>
 
-        <span>→</span>
+    <div class="future-overlay"></div>
 
-    </a>
+    <div class="future-content">
 
-</div>
-
-
-        <!-- RENAISSANCE NO MEIO -->
-        <div class="renaissance-container">
-
-            <img
-                class="renaissance-logo"
-                src="assets/logo_RENAISSANCE.png"
-                alt="Renaissance Symposium">
-
-             <img
-        class="renaissance-text"
-        src="assets/texto abaixo do logo renaissance.png"
-        alt="Estética, longevidade, regenerativa e saúde integrativa"
-    >
-
-</div>
-
-        </div>
-
-    </div>
-</section>
-
-
-<!-- CONTAGEM REGRESSIVA -->
-
-<div class="countdown">
-
-    <div class="countdown-title">
-        O EVENTO COMEÇA EM
-    </div>
-
-    <div class="countdown-container">
-
-        <div class="countdown-box">
-            <span id="days">00</span>
-            <small>DIAS</small>
-        </div>
-
-        <div class="countdown-separator">:</div>
-
-        <div class="countdown-box">
-            <span id="hours">00</span>
-            <small>HORAS</small>
-        </div>
-
-        <div class="countdown-separator">:</div>
-
-        <div class="countdown-box">
-            <span id="minutes">00</span>
-            <small>MINUTOS</small>
-        </div>
-
-        <div class="countdown-separator">:</div>
-
-        <div class="countdown-box">
-            <span id="seconds">00</span>
-            <small>SEGUNDOS</small>
-        </div>
-
-    </div>
-
-</div>
-<!-- =====================================================
-     EXPERIÊNCIA
-===================================================== -->
-
-<section class="about-section" id="experiencia">
-
-    <div class="about-content">
-
-        <!-- LADO ESQUERDO -->
-        <div class="about-text">
-
-            <span class="section-label">
-                IMERSÃO RENAISSANCE
-            </span>
-
-            <h2>
-                UMA EXPERIÊNCIA QUE VAI MUITO ALÉM DE UM EVENTO!
-                
-                <br>
-        
-            
-            </h2>
-
-            <p class="about-description">
-                A imersão Renaissance reúne mulheres que decidiram elevar 
-                o nível da estética, da ciência, do posicionamento e da 
-                mentalidade. Com o propósito de transformar vidas através da estética, saúde e bem-estar.
-               
-            </p>
-
-            <div class="about-bottom">
-
-                <h3>
-                    A ESTÉTICA DO FUTURO JÁ COMEÇOU!
-                </h3>
-                <br>
-
-                <p>
-                    Dois dias para descobrir novas possibilidades e vivenciar uma experiência
-                criada para quem não quer apenas acompanhar o futuro —
-                quer fazer parte dele.
-
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- LADO DIREITO -->
-        <div class="about-image">
-
-    <div class="about-image principal">
-        <img
-            src="assets/foto-conexao-2.jpeg"
-            alt="Conexões e experiências do Renaissance Symposium">
-    </div>
-
-    <div class="about-image">
-        <img
-            src="assets/foto-conexao-1.jpeg"
-            alt="Profissionais reunidos no Renaissance Symposium">
-    </div>
-
-</div>
-
-</section>
-<!-- =====================================================
-     EXPERIÊNCIAS QUE FICAM
-===================================================== -->
-
-<section class="experiences">
-
-    <div class="experiences-text">
-
-        <span class="experiences-label">
-            EXPERIÊNCIAS QUE FICAM
+        <span class="future-eyebrow">
+            A NOVA VISÃO
         </span>
 
         <h2>
-            Aprendizado que inspira.
-            <br>
-            Conexões que permanecem.
+            A estética do<br>
+            futuro <em>já começou.</em>
         </h2>
-
-        <p>
-            Descubra como a saúde integrativa pode transformar 
-            seus resultados na estética facial.
-            Palestras transformadoras, conteúdo de alto
-            nível e momentos que fortalecem laços
-            profissionais e humanos.
-        </p>
-
-       
-
-    </div>
-
-
-    <!-- UMA ÚNICA FOTO -->
-
-    <div class="experience-image">
-
-        <img
-            src="assets/experiencia.jpeg"
-            alt="Experiência durante o Renaissance Symposium">
-
-    </div>
-
-</section>
-
-<!-- =====================================================
-     DEPOIMENTOS
-===================================================== -->
-
-<section
-    class="testimonials"
-    id="depoimentos">
-
-
-    <div class="section-title">
-    <span></span>
-
-    <h2>QUEM VIVEU, SENTIU.</h2>
-
-    <span></span>
-</div>
-
-
-    <div class="testimonial-wrapper">
-
-
-        <button
-            class="testimonial-arrow left"
-            id="prevTestimonial">
-
-            ‹
-
-        </button>
-
-
-        <div
-            class="testimonial-slider"
-            id="testimonialSlider">
-
-
-            <!-- DEPOIMENTO 1 -->
-
-            <article class="testimonial">
-
-                <img
-                    src="assets/FEEDBACK2.png"
-                    alt="Depoimento de participante">
-
-            </article>
-
-
-            <!-- DEPOIMENTO 2 -->
-
-            <article class="testimonial">
-
-                <img
-                    src="assets/FEEDBACK4.png"
-                    alt="Depoimento de participante">
-
-            </article>
-
-
-            <!-- DEPOIMENTO 3 -->
-
-            <article class="testimonial">
-
-                <img
-                    src="assets/FEEDBACK3.png"
-                    alt="Depoimento de participante">
-
-            </article>
-
-
-            <!-- DEPOIMENTO 4 -->
-
-            <article class="testimonial">
-
-                <img
-                    src="assets/FEEDBACK5.png"
-                    alt="Depoimento de participante">
-
-            </article>
-
-
-            <!-- DEPOIMENTO 5 -->
-
-            <article class="testimonial">
-
-                <img
-                    src="assets/FEEDBACK6.png"
-                    alt="Depoimento de participante">
-
-            </article>
-
-
-            <!-- DEPOIMENTO 6 -->
-
-            <article class="testimonial">
-
-                <img
-                    src="assets/feedback1.png"
-                    alt="Depoimento de participante">
-
-            </article>
-
-
-        </div>
-
-
-        <button
-            class="testimonial-arrow right"
-            id="nextTestimonial">
-
-            ›
-
-        </button>
-
-    </div>
-
-
-    <div
-        class="testimonial-dots"
-        id="testimonialDots">
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONEXÕES
-===================================================== -->
-
-<section
-    class="connections">
-
-
-    <div class="connections-text">
-
-
-        <span class="section-label">
-
-            CONEXÕES QUE TRANSFORMAM
-
-        </span>
-
-
-        <h2>
-
-            Mais do que um evento,
-            <br>
-            um movimento.
-
-        </h2>
-
-
-        <p>
-
-            Reunimos profissionais, especialistas e
-            apaixonados pelo futuro da saúde e da estética
-            para compartilhar conhecimento, experiências
-            e novas perspectivas.
-
-        </p>
-
-
-        <div class="connection-icons">
-
-
-            <div>
-
-              
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-
-
-    <div class="networking-image">
-
-        <img
-            src="assets/conexoes1.jpeg"
-            alt="Networking">
-
-    </div>
-
-
-</section>
-
-<!-- =====================================================
-     PALESTRANTES
-===================================================== -->
-
-<section class="speakers" id="palestrantes">
-
-    <div class="speakers-title">
-        <h2>
-            PALESTRANTES CONFIRMADOS
-        </h2>
-    </div>
-
-
-    <div class="speakers-wrapper">
-
-        <!-- SETA ESQUERDA -->
-
-        <button
-            class="speaker-arrow left"
-            id="prevSpeaker">
-            ‹
-        </button>
-
-
-        <!-- CARROSSEL -->
-
-        <div
-            class="speakers-slider"
-            id="speakersSlider">
-
-
-            <!-- PALESTRANTE 1 -->
-
-            <article class="speaker">
-
-                <img
-                    src="assets/Dra Juliana Tormena.jpeg"
-                    alt="DRA. JULIANA TORMENA">
-
-                <h3>
-                    DRA. JULIANA TORMENA
-                </h3>
-
-                <p>
-                    DO TERRENO BIOLÓGICO AO HIGH TICKET - A nova era da estética regenerativa
-                </p>
-
-            </article>
-
-
-            <!-- PALESTRANTE 2 -->
-
-            <article class="speaker">
-
-                <img
-                    src="assets/Dr Antonio Celória.jpeg"
-                    alt="DR. ANTÔNIO CELÓRIA">
-
-                <h3>
-                    DR. ANTÔNIO CELÓRIA
-                </h3>
-
-                <p>
-                    Golden Full Face: Planejamento Estrutural para Harmonização e Rejuvenescimento Facial em Pacientes Classe II – Divisão 1
-                </p>
-
-            </article>
-
-
-            <!-- PALESTRANTE 3 -->
-
-            <article class="speaker">
-
-                <img
-                    src="assets/Dra. Sonia Obregón.jpeg"
-                    alt="DRA. SONIA OBREGÓN">
-
-                <h3>
-                    DRA. SONIA OBREGÓN
-                </h3>
-
-                <p>
-                    Estratégia Regenerativa Multimodal na Fibrose Persistente Pós-Endolaser
-                </p>
-
-            </article>
-
-
-            <!-- PALESTRANTE 4 -->
-
-            <article class="speaker">
-
-                <img
-                    src="assets/Dra Jacqueline Gonçalves.JPG"
-                    alt="DRA. JACQUELINE GONÇALVES">
-
-                <h3>
-                    DRA. JACQUELINE GONÇALVES
-                </h3>
-
-                <p>
-                    HOF Advanced and Surgery
-                </p>
-
-            </article>
-
-
-            <!-- PALESTRANTE 5 -->
-
-            <article class="speaker">
-
-                <img
-                    src="assets/Dra Caroline Martins Pinheiro.jpeg"
-                    alt="CAROLINE MARTINS PINHEIRO">
-
-                <h3>
-                    CAROLINE M. PINHEIRO
-                </h3>
-
-                <p>
-                    Do Sinal à Causa — Acometimentos da pele e os pilares da abordagem integrativa
-                </p>
-
-            </article>
-
-
-            <!-- PALESTRANTE 6 -->
-
-            <article class="speaker">
-
-                <img
-                    src="assets/Dra Vládia C P Oliveira Senges Lino.jpeg"
-                    alt="DRA. VLÁDIA OLIVEIRA">
-
-                <h3>
-                    DRA. VLÁDIA OLIVEIRA
-                </h3>
-
-                <p>
-                    LONGEVITY — Lifting além do tempo
-                </p>
-
-            </article>
-
-
-            <!-- PALESTRANTE 7 -->
-
-            <article class="speaker">
-
-                <img
-                    src="assets/Dr Caio Batista Cafola.JPG"
-                    alt="DR. CAIO CAFOLA">
-
-                <h3>
-                    DR. CAIO CAFOLA
-                </h3>
-
-                <p>
-                    Lifting Facial Além da Estética — Aplicações na Reconstrução de Ferimentos Complexos da Face
-                </p>
-
-            </article>
-
-
-            <!-- PALESTRANTE 8 -->
-
-            <article class="speaker">
-
-                <img
-                    src="assets/Dra Juliana Zorzella.jpeg"
-                    alt="DRA. JULIANA ZORZELLA">
-
-                <h3>
-                    DRA. JULIANA ZORZELLA
-                </h3>
-
-                <p>
-                    Além do Full Face — Uma abordagem regenerativa do envelhecimento facial
-                </p>
-
-            </article>
-
-
-            <!-- PALESTRANTE 9 -->
-
-            <article class="speaker">
-
-                <img
-                    src="assets/Dr Marcelo guerreiro Fernandes.jpeg"
-                    alt="DR. MARCELO GUERREIRO">
-
-                <h3>
-                    DR. MARCELO G. FERNANDES
-                </h3>
-
-                <p>
-                    Agregados Plaquetários — O diferencial Premium da sua clínica em 2026
-                </p>
-
-            </article>
-
-
-            <!-- PALESTRANTE 10 -->
-
-            <article class="speaker">
-
-                <img
-                    src="assets/Dra Marcele Arouca.jpeg"
-                    alt="MARCELE AROUCA">
-
-                <h3>
-                   DRA. MARCELE AROUCA
-                </h3>
-
-                <p>
-                    Fios de PDO: Planejamento Estratégico para Resultados Naturais
-                </p>
-
-            </article>
-
-
-            <!-- PALESTRANTE 11 -->
-
-            <article class="speaker">
-
-                <img
-                    src="assets/Dr Belmontt Souza de Magalhaes.jpeg"
-                    alt="BELMONTT MAGALHÃES">
-
-                <h3>
-                    DR. BELMONTT MAGALHÃES
-                </h3>
-
-                <p>
-                    Gestão de clínicas: Incremento de receita com protocolos e CRM
-                </p>
-
-            </article>
-
-
-            <!-- PALESTRANTE 12 -->
-
-            <article class="speaker">
-
-                <img
-                    src="assets/Dra Patricia Benini.jpg"
-                    alt="PATI BENINI">
-
-                <h3>
-                    DRA. PATRÍCIA BENINI
-                </h3>
-
-                <p>
-                    Os 4 pilares do sucesso
-                </p>
-
-            </article>
-
-
-            <!-- PALESTRANTE 13 -->
-
-            <article class="speaker">
-
-                <img
-                    src="assets/Dra Josiane Elise Lopes da Silveira.jpg"
-                    alt="DRA. JOSIANE ELISE">
-
-                <h3>
-                    DRA. JOSIANE ELISE
-                </h3>
-
-                <p>
-                    Fios de PDO Montados: A Tríade da Transformação — Preenchimento, Bioestimulação e Miomodulação
-                </p>
-
-            </article>
-
-
-        </div>
-
-
-        <!-- SETA DIREITA -->
-
-        <button
-            class="speaker-arrow right"
-            id="nextSpeaker">
-            ›
-        </button>
-
-    </div>
-
-
-    <!-- BOLINHAS -->
-
-    <div
-        class="speaker-dots"
-        id="speakerDots">
-    </div>
-
-
-</section>
-
-<section class="location" id="local">
-
-    <div class="location-title">
-        <span></span>
-        <h2>O LOCAL</h2>
-        <span></span>
-    </div>
-
-    <div class="location-content">
-
-        <div class="location-images">
-            <img src="assets/local.jpg" alt="Auditório do evento">
-            <img src="assets/auditório.jpg" alt="Local do evento">
-        </div>
-
-        <div class="location-info">
-
-            
-
-            <h3>K-PLATZ CENTER<br></h3>
-
-            <p>
-                Auditório Walter Osli Koerich
-            </p>
-
-            <p>
-                <strong></strong><br>
-                
-            </p>
-
-            <a href="https://www.google.com/maps/dir//K-Platz,+Av.+Presidente+Kennedy,+568+-+Campinas,+S%C3%A3o+Jos%C3%A9+-+SC,+88101-001/@-23.4290075,-46.3709164,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95273779ffb1d245:0xfd20b3bf8486786f!2m2!1d-48.6110484!2d-27.6006724?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D" class="location-button">
-                VER LOCAL NO MAPA
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     INFORMAÇÕES
-===================================================== -->
-
-<section class="information">
-
-
-    <!-- FAQ -->
-
-    <div
-        class="information-column"
-        id="faq">
 
         <h3>
-            PERGUNTAS FREQUENTES
+            O futuro da estética não será
+            <strong>construído apenas pela técnica.</strong>
         </h3>
-
-
-        <div class="faq-item">
-
-            <button>
-
-                Como faço para me inscrever?
-
-                <span>+</span>
-
-            </button>
-
-            <div class="faq-answer">
-
-                Clique em "Garanta sua inscrição"
-                e siga as etapas de cadastro.
-
-            </div>
-
-        </div>
-
-
-        <div class="faq-item">
-
-            <button>
-
-                O que está incluso na inscrição?
-
-                <span>+</span>
-
-            </button>
-
-            <div class="faq-answer">
-
-                A inscrição inclui a programação
-                e as experiências previstas para
-                o evento.
-
-            </div>
-
-        </div>
-
-
-        <div class="faq-item">
-
-            <button>
-
-                Haverá certificado de participação?
-
-                <span>+</span>
-
-            </button>
-
-            <div class="faq-answer">
-
-                Sim. O certificado será disponibilizado
-                conforme as regras do evento.
-
-            </div>
-
-        </div>
-
-
-        <div class="faq-item">
-
-            <button>
-
-                Qual o local do evento?
-
-                <span>+</span>
-
-            </button>
-
-            <div class="faq-answer">
-
-                K-PLATZ CENTER
-                Av. Presidente Kennedy, 568 -
-                Campinas, São José
-                FLORIANÓPOLIS – SC        
-
-            </div>
-
-        </div>
-
-
-        <div class="faq-item">
-
-            <button>
-
-                Posso transferir minha inscrição?
-
-                <span>+</span>
-
-            </button>
-
-            <div class="faq-answer">
-
-                Consulte a organização para
-                verificar as condições.
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-
-    <!-- HOTÉIS -->
-
-    <div class="information-column">
-
-        <h3>
-            RECOMENDAÇÕES DE HOTÉIS
-        </h3>
-
-<ul>
-            <li>
-                <a href="https://www.google.com/maps/dir//K-Platz+Hotel,+Av.+Cruz+e+Souza,+25+-+Campinas,+S%C3%A3o+Jos%C3%A9+-+SC,+88101-040/@-23.4290075,-46.3709164,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x952737447e2de075:0x6e0286f1b29ab07e!2m2!1d-48.6109764!2d-27.6006774?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                ⌂ K-Platz Hotel
-            </a>
-            </li>
-           </ul>
-
-           <ul>
-            <li>
-                <a href="https://www.google.com/maps/place/Cambirela+Hotel/@-27.581269,-48.5891955,17z/data=!3m1!4b1!4m9!3m8!1s0x95274832182ae431:0xa96cbefcb48627df!5m2!4m1!1i2!8m2!3d-27.5812738!4d-48.5866206!16s%2Fg%2F11bx4m2c0g?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                 ⌂ Cambirela Hotel
-                </a>
-            </li>
-        </ul>
-            
-        <ul>
-            <li>
-                <a href="https://www.google.com/maps/place/Hotel+Br%C3%BCggemann/@-27.5910525,-48.5806064,17z/data=!3m2!4b1!5s0x952737e7e30511f1:0xdb9f3bcf7429e21!4m9!3m8!1s0x952737e809d60a89:0xbe7d747052aad975!5m2!4m1!1i2!8m2!3d-27.5910573!4d-48.5780315!16s%2Fg%2F1td77rnj?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                 ⌂ Hotel Brüggemann
-                </a>
-            </li>
-        </ul>
-            
-            <ul>
-            <li>
-                <a href="https://www.google.com/maps/place/LK+Design+Hotel+-+Florian%C3%B3polis/@-27.587052,-48.5539545,17z/data=!3m1!4b1!4m9!3m8!1s0x9527381977ce54db:0x6e54e42dbbf70755!5m2!4m1!1i2!8m2!3d-27.5870568!4d-48.5513796!16s%2Fg%2F11lh5g0x50?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                 ⌂ LK Design Hotel
-                </a>
-            </li>
-        </ul>
-            
-            <ul>
-            <li>
-                <a href="https://www.google.com/maps/place/Majestic+Palace+Hotel/@-27.5833168,-48.5470713,17z/data=!3m2!4b1!5s0x952738114592cb8b:0xfe0ade09ab16cc46!4m9!3m8!1s0x952738114f2ff87d:0xb271411bf8880135!5m2!4m1!1i2!8m2!3d-27.5833216!4d-48.5444964!16s%2Fg%2F1w2y_m6c?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                   ⌂ Majestic Palace Hotel
-                </a>
-            </li>
-        </ul>
-            
-           <ul>
-            <li>
-                <a href="https://www.google.com/maps/place/Faial+Prime+Suites/@-27.5946442,-48.5580589,16z/data=!3m1!4b1!4m9!3m8!1s0x95273821b082dff9:0x7d0c37a8e5c75b69!5m2!4m1!1i2!8m2!3d-27.594649!4d-48.555484!16s%2Fg%2F11bxdsq51w?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                   ⌂ Faial Prime Suites
-                </a>
-            </li>
-        </ul>
-
-            <ul>   
-            <li>
-                <a href="https://www.google.com/maps/place/Hotel+ibis/@-27.5923766,-48.5605311,17z/data=!3m1!4b1!4m9!3m8!1s0x9527381fe95f0e69:0xd17a209d6b11387c!5m2!4m1!1i2!8m2!3d-27.5923814!4d-48.5579562!16s%2Fg%2F1tffqj2f?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                   ⌂ Hotel Ibis
-                </a>
-            </li>
-        </ul>
-
-    </div>
-
-
-
-    <!-- PONTOS TURÍSTICOS -->
-
-    <div class="information-column">
-
-        <h3>
-            PONTOS TURÍSTICOS
-        </h3>
-
-
-        <ul>
-
-            <li>
-                <a href="https://www.google.com/maps/place/Catedral+Metropolitana+de+Florian%C3%B3polis+Nossa+Senhora+Do+Desterro+e+Santa+Catarina+De+Alexandria/@-27.5962808,-48.5507062,18z/data=!4m15!1m8!3m7!1s0x952748211abc60fb:0x4cb7a6b1438ca299!2sCatedral+Metropolitana+de+Florian%C3%B3polis+Nossa+Senhora+Do+Desterro+e+Santa+Catarina+De+Alexandria!8m2!3d-27.596377!4d-48.549287!10e1!16s%2Fg%2F1226m1j5!3m5!1s0x952748211abc60fb:0x4cb7a6b1438ca299!8m2!3d-27.596377!4d-48.549287!16s%2Fg%2F1226m1j5?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                ⌂ Catedral Metropolitana
-                </a>
-            </li>
-            <li>
-                <a href="https://www.google.com/maps/place/Mercado+P%C3%BAblico+de+Florian%C3%B3polis/@-27.5973727,-48.5554916,17z/data=!3m1!4b1!4m6!3m5!1s0x9527382413d70529:0x5ed250f064e1c9a!8m2!3d-27.5973775!4d-48.5529167!16s%2Fg%2F12391zx9?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                ⌂ Mercado Público de Florianópolis
-                </a>
-            </li>
-            <li>
-                <a href="https://www.google.com/maps/place/Ribeir%C3%A3o+da+Ilha,+Florian%C3%B3polis+-+SC/@-27.7145846,-48.5812253,14z/data=!4m15!1m8!3m7!1s0x952725744ac6fd95:0x5217d3bd97c3bb98!2sRibeir%C3%A3o+da+Ilha,+Florian%C3%B3polis+-+SC!3b1!8m2!3d-27.7145846!4d-48.5606259!16s%2Fg%2F1q5bmxymw!3m5!1s0x952725744ac6fd95:0x5217d3bd97c3bb98!8m2!3d-27.7145846!4d-48.5606259!16s%2Fg%2F1q5bmxymw?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                ⌂ Ribeirão da Ilha
-                </a>
-            </li>
-            <li>
-                <a href="https://www.google.com/maps/place/Parque+de+Coqueiros/@-27.6015751,-48.5771166,16z/data=!3m1!4b1!4m6!3m5!1s0x95273794ec066941:0xf0fb1b82055db996!8m2!3d-27.6015799!4d-48.5745417!16s%2Fg%2F11cmbg_y_2?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                ⌂ Parque de coqueiros
-                </a>
-            </li>
-            <li>
-                <a href="https://www.google.com/maps/place/Pra%C3%A7a+XV+de+Novembro+-+Centro,+Florian%C3%B3polis+-+SC,+88010-400/@-27.5976478,-48.5519895,17z/data=!4m15!1m8!3m7!1s0x95273824c0b7ca51:0xae3341442c5854e6!2sPra%C3%A7a+XV+de+Novembro+-+Centro,+Florian%C3%B3polis+-+SC,+88010-400!3b1!8m2!3d-27.5976866!4d-48.5494203!16s%2Fg%2F1q69jn2c8!3m5!1s0x95273824c0b7ca51:0xae3341442c5854e6!8m2!3d-27.5976866!4d-48.5494203!16s%2Fg%2F1q69jn2c8?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                ⌂ Praça XV de Novembro (Praça XV)
-                </a>
-            </li>
-            <li>
-                <a href="https://www.google.com/maps/place/Ponte+Herc%C3%ADlio+Luz/@-27.5938069,-48.567685,17z/data=!3m1!4b1!4m6!3m5!1s0x952737f3a902cdc7:0x1aa7dec706ee183a!8m2!3d-27.5938117!4d-48.5651101!16zL20vMDZyN2t2?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                ⌂ Ponte Hercílio Luz
-                </a>
-            </li>
-            <li>
-                <a href="https://www.google.com/maps/place/Lagoa+da+Concei%C3%A7%C3%A3o/@-27.609138,-48.4739183,17z/data=!3m1!4b1!4m6!3m5!1s0x95270f07a452f787:0xa28273a470527299!8m2!3d-27.6091428!4d-48.4713434!16s%2Fg%2F11kqr_mq0z?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                ⌂ Lagoa da Conceição
-                </a>
-            </li>
-            <li>
-                <a href="https://www.google.com/maps/place/Praia+Mole/@-27.6034261,-48.4375036,16z/data=!3m1!4b1!4m6!3m5!1s0x95273e792af8530b:0xadab0995a660f825!8m2!3d-27.6022459!4d-48.4326839!16s%2Fm%2F0br_rzv?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                ⌂ Praia Mole
-                </a>
-            </li>
-            <li>
-                <a href="https://www.google.com/maps/place/Santo+Antonio+de+Lisboa,+Florian%C3%B3polis+-+SC/@-27.5146906,-48.5350498,14z/data=!4m6!3m5!1s0x95274692c1cfaca5:0x9893a62751be06a5!8m2!3d-27.5107133!4d-48.5124715!16s%2Fg%2F11bc6lv52f?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-                ⌂ Santo Antônio de Lisboa
-                </a>
-            </li>
-
-        </ul>
-
-    </div>
-
-
-</section>
-
-
-
-<!-- =====================================================
-     CTA
-===================================================== -->
-
-<section
-    class="final-cta"
-    id="data-evento">
-
-
-    <p>
-
-       30 E 31 DE OUTUBRO DE 2026
-
-    </p>
-    <br>
-
-</section>
-
-
-<!-- =====================================================
-     INSCRIÇÃO
-===================================================== -->
-
-<section class="pagamento-section" id="inscricao">
-
-    <div class="pagamento-header">
-
-        <span>
-            RENAISSANCE SYMPOSIUM
-        </span>
-
-        <h2>
-            GARANTA SUA
-            <strong>INSCRIÇÃO</strong>
-        </h2>
-
-        <div class="pagamento-divider"></div>
 
         <p>
-            Escolha o seu lote e faça parte dessa experiência.
+            Será construído pela capacidade de
+            <span class="highlight">compreender o paciente</span>
+            de maneira mais ampla: seu terreno biológico,
+            sua capacidade regenerativa, sua saúde,
+            seu envelhecimento e a forma como ele
+            vivencia toda a jornada de cuidado.
         </p>
-
-    </div>
-
-
-    <div class="pagamento-cards">
-
-
-        <!-- LOTE 1 -->
-
-        <div class="pagamento-card">
-
-            <div class="pagamento-card-top">
-                <span>LOTE</span>
-                <strong>01</strong>
-            </div>
-
-            <div class="pagamento-card-line"></div>
-
-            <h3>
-                RENAISSANCE
-                <br>
-                SYMPOSIUM
-            </h3>
-
-            <p>
-                Garanta sua participação
-                no evento.
-            </p>
-
-            <a href="https://pay.kiwify.com.br/s8U8EQf"
-               target="_blank"
-               rel="noopener noreferrer">
-
-                INSCREVA-SE
-
-                <span>→</span>
-
-            </a>
-
-        </div>
-
-
-        <!-- LOTE 2 -->
-
-<div class="pagamento-card pagamento-destaque">
-
-    <div class="pagamento-card-top">
-        <span>LOTE</span>
-        <strong>02</strong>
-    </div>
-
-    <div class="pagamento-card-line"></div>
-
-    <h3>
-        RENAISSANCE
-        <br>
-        SYMPOSIUM
-    </h3>
-
-    <p>
-        Garanta sua participação
-        no evento.
-    </p>
-
-    <a href="https://pay.kiwify.com.br/MAZ9Kqg"
-       target="_blank"
-       rel="noopener noreferrer">
-
-        INSCREVA-SE
-
-        <span>→</span>
-
-    </a>
-
-</div>
-
-
-        <!-- LOTE 3 -->
-
-        <div class="pagamento-card">
-
-            <div class="pagamento-card-top">
-                <span>LOTE</span>
-                <strong>03</strong>
-            </div>
-
-            <div class="pagamento-card-line"></div>
-
-            <h3>
-                RENAISSANCE
-                <br>
-                SYMPOSIUM
-            </h3>
-
-            <p>
-                Garanta sua participação
-                no evento.
-            </p>
-
-            <a href="https://pay.kiwify.com.br/a21F3v8"
-               target="_blank"
-               rel="noopener noreferrer">
-
-                INSCREVA-SE
-
-                <span>→</span>
-
-            </a>
-
-        </div>
-
-
-    </div>
-
-
-    <div class="pagamento-footer">
-
-        <span>PAGAMENTO SEGURO</span>
-
-        <i>•</i>
-
-        <span>INSCRIÇÃO ONLINE</span>
-
-        <i>•</i>
-
-        <span>VAGAS LIMITADAS</span>
-
-    </div>
-
-</section>
-
-<footer class="footer">
-
-    <div class="footer-content">
-
-        <!-- LOGO RENAISSANCE -->
-        <div class="footer-brand">
-            <img src="assets/logo_RG.png" alt="Renaissance">
-
-          
-        </div>
-
-
-        <!-- LINKS -->
-        <div class="footer-column">
-            <h3>LINKS</h3>
-
-            <a href="#inicio">INÍCIO</a>
-            <a href="#experiencia">O EVENTO</a>
-            <a href="#palestrantes">PALESTRANTES</a>
-            <a href="#experiencia">EXPERIÊNCIA</a>
-            <a href="#faq">FAQ</a>
-        </div>
-
-
-        <!-- CONTATO -->
-        <div class="footer-column footer-contact" id="contato">
-            <h3>CONTATO</h3>
-
-            <!-- INSTAGRAM 1 -->
-            <a href="https://instagram.com/renaissance.grupo" target="_blank" rel="noopener noreferrer">
-                <span class="instagram-icon">
-                    <svg viewBox="0 0 24 24">
-                        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-                        <circle cx="12" cy="12" r="4"></circle>
-                        <circle cx="17.5" cy="6.5" r="1"></circle>
-                    </svg>
-                </span>
-                @renaissance.grupo
-            </a>
-
-            <!-- INSTAGRAM 2 -->
-            <a href="https://instagram.com/cihof_congresso_harmonizacao" target="_blank" rel="noopener noreferrer">
-                <span class="instagram-icon">
-                    <svg viewBox="0 0 24 24">
-                        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-                        <circle cx="12" cy="12" r="4"></circle>
-                        <circle cx="17.5" cy="6.5" r="1"></circle>
-                    </svg>
-                </span>
-                @cihof_congresso_harmonizacao
-            </a>
-
-            <!-- TELEFONE -->
-            <a href="tel:+5548988037560">
-                <i class="fa-solid fa-phone"></i>
-                (48) 98803-7560
-            </a>
-        
-        </div>
-
-
-       
-        <div class="footer-realization">
-            
-
-            <img src="assets/logo_CIHOF.png"
-                 alt="Juliana Tormena Group">
-        </div>
-
-    </div>
-
-
-    <!-- LINHA INFERIOR -->
-    <div class="footer-bottom">
 
         <p>
-            © 2026 RENAISSANCE SYMPOSIUM — TODOS OS DIREITOS RESERVADOS.
+            O Renaissance Symposium + CIHOF, em Floripa,
+            nasce justamente desse
+            <span class="highlight">encontro.</span>
         </p>
 
-        <a href="#inicio">
-            ↑ &nbsp; VOLTAR AO TOPO
+        <div class="future-tags">
+
+            <span>Saúde integrativa</span>
+            <span>Estética regenerativa</span>
+            <span>Wellness</span>
+            <span>Tecnologia</span>
+            <span>Harmonização Orofacial</span>
+            <span>Cirurgia da face</span>
+
+        </div>
+
+        <a href="#inscricao" class="future-button">
+            QUERO VIVER ESSA EXPERIÊNCIA
+            <span>→</span>
         </a>
 
     </div>
 
+</section>
+
+  <!-- EXPERIÊNCIA -->
+  <section class="experience-section" id="experiencia">
+
+    <div class="experience-header">
+
+        <span>O QUE VOCÊ VAI VIVER</span>
+
+        <h2>
+            Muito além de<br>
+            <em>assistir palestras.</em>
+        </h2>
+
+    </div>
+
+
+    <div class="experience-grid">
+
+        <article class="experience-card"
+            style="background-image: url('assets/conhecimento.jpg');">
+
+            <div class="experience-overlay"></div>
+
+            <span class="experience-number"></span>
+
+            <div class="experience-content">
+                <h3>Conhecimento</h3>
+                <p>
+                    Palestras de alto nível com profissionais
+                    que vivem a prática clínica.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="experience-card"
+            style="background-image: url('assets/ciencia.jpg');">
+
+            <div class="experience-overlay"></div>
+
+            <span class="experience-number"></span>
+
+            <div class="experience-content">
+                <h3>Ciência</h3>
+                <p>
+                    Conteúdo científico conectado às novas
+                    possibilidades da estética.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="experience-card"
+            style="background-image: url('assets/regeneracao.jpg');">
+
+            <div class="experience-overlay"></div>
+
+            <span class="experience-number"></span>
+
+            <div class="experience-content">
+                <h3>Regeneração</h3>
+                <p>
+                    Um novo olhar sobre terreno biológico,
+                    longevidade e resultados.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="experience-card"
+            style="background-image: url('assets/tecnica.jpg');">
+
+            <div class="experience-overlay"></div>
+
+            <span class="experience-number"></span>
+
+            <div class="experience-content">
+                <h3>Técnica</h3>
+                <p>
+                    Harmonização Orofacial, procedimentos
+                    e cirurgias estéticas da face.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="experience-card"
+            style="background-image: url('assets/wellness.jpg');">
+
+            <div class="experience-overlay"></div>
+
+            <span class="experience-number"></span>
+
+            <div class="experience-content">
+                <h3>Wellness</h3>
+                <p>
+                    Uma visão mais completa sobre saúde,
+                    experiência e cuidado.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="experience-card"
+            style="background-image: url('assets/conexoes.jpg');">
+
+            <div class="experience-overlay"></div>
+
+            <span class="experience-number"></span>
+
+            <div class="experience-content">
+                <h3>Conexões</h3>
+                <p>
+                    Profissionais, professores, marcas e novas
+                    oportunidades reunidos no mesmo ambiente.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="experience-card"
+            style="background-image: url('assets/experiencia humana.jpg');">
+
+            <div class="experience-overlay"></div>
+
+            <span class="experience-number"></span>
+
+            <div class="experience-content">
+                <h3>Experiência<br>humana</h3>
+                <p>
+                    Porque o futuro da estética também passa
+                    pela empatia e pela maneira como fazemos
+                    nossos pacientes se sentirem.
+                </p>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+  <!-- PALESTRANTES -->
+  <section class="section speakers" id="palestrantes">
+    <div class="shell">
+      <div class="section-head reveal">
+        <span class="kicker">PALESTRANTES CONFIRMADOS</span>
+        <h2>Grandes nomes. <em>Novos olhares.</em></h2>
+        
+      </div>
+
+      <div class="speakers-grid">
+        <article class="speaker reveal"><div class="photo"><span></span><img src="assets/juliana-tormena.jpg" alt="Dra. Juliana Tormena"></div><h3>Dra. Juliana Tormena</h3><p class="specialty">Palestrante</p><p class="talk">Do terreno biológico ao high ticket - A nova era da estética regenerativa.</p></article>
+        <article class="speaker reveal"><div class="photo"><span></span><img src="assets/marcelo-guerreiro.jpg" alt="Dr. Marcelo Guerreiro"></div><h3>Dr. Marcelo Guerreiro</h3><p class="specialty">Palestrante</p><p class="talk">Agregados Plaquetários — O diferencial Premium da sua clínica em 2026</p></article>
+        <article class="speaker reveal"><div class="photo"><span></span><img src="assets/marcele-arouca.jpg" alt="Dra. Marcele Arouca"></div><h3>Dra. Marcele Arouca</h3><p class="specialty">Palestrante</p><p class="talk">Fios de PDO: Planejamento Estratégico para Resultados Naturais</p></article>
+        <article class="speaker reveal"><div class="photo"><span></span><img src="assets/belmontt-magalhaes.jpg" alt="Dr. Belmontt Magalhães"></div><h3>Dr. Belmontt Magalhães</h3><p class="specialty">Palestrante</p><p class="talk">Gestão de clínicas: Incremento de receita com protocolos e CRM</p></article>
+        <article class="speaker reveal"><div class="photo"><span></span><img src="assets/juliana-zorzella.jpg" alt="Dra. Juliana Zorzella"></div><h3>Dra. Juliana Zorzella</h3><p class="specialty">Palestrante</p><p class="talk">Além do Full Face — Uma abordagem regenerativa do envelhecimento facial</p></article>
+        <article class="speaker reveal"><div class="photo"><span></span><img src="assets/caio-cafola.jpg" alt="Dr. Caio Cafola"></div><h3>Dr. Caio Cafola</h3><p class="specialty">Palestrante</p><p class="talk">Lifting Facial Além da Estética — Aplicações na Reconstrução de Ferimentos Complexos da Face</p></article>
+        <article class="speaker reveal"><div class="photo"><span></span><img src="assets/josiane-elise.jpg" alt="Dra. Josiane Elise"></div><h3>Dra. Josiane Elise</h3><p class="specialty">Palestrante</p><p class="talk">Fios de PDO Montados: A Tríade da Transformação — Preenchimento, Bioestimulação e Miomodulação</p></article>
+        <article class="speaker reveal"><div class="photo"><span></span><img src="assets/antonio-celoria.jpg" alt="Dr. Antônio Celória"></div><h3>Dr. Antônio Celória</h3><p class="specialty">Palestrante</p><p class="talk">Golden Full Face: Planejamento Estrutural para Harmonização e Rejuvenescimento Facial em Pacientes Classe II – Divisão 1</p></article>
+        <article class="speaker reveal"><div class="photo"><span></span><img src="assets/caroline-martins.jpg" alt="Dra. Caroline Martins Pinheiro"></div><h3>Dra. Caroline Martins Pinheiro</h3><p class="specialty">Palestrante</p><p class="talk">DO SINAL A CAUSA - Acometimentos da pele e os pilares da abordagem integrativa</p></article>
+        <article class="speaker reveal"><div class="photo"><span></span><img src="assets/jacqueline-goncalves.jpg" alt="Dra. Jacqueline Gonçalves"></div><h3>Dra. Jacqueline Gonçalves</h3><p class="specialty">Palestrante</p><p class="talk">Hof Advanced and Surgery</p></article>
+      </div>
+
+      <div class="center reveal">
+        <a class="button button-gold" href="https://pay.kiwify.com.br/s8U8EQf" target="_blank" rel="noopener noreferrer">QUERO ESTAR COM VOCÊS EM FLORIPA</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CIRURGIAS -->
+  <section class="surgery-section" id="cirurgias">
+  <div class="surgery-bg"></div>
+
+  <div class="surgery-overlay"></div>
+
+  <div class="surgery-content">
+
+    <div class="surgery-label">
+      CIRURGIAS ESTÉTICAS DA FACE
+    </div>
+
+    <h2>
+      Da ciência <span>à<br> prática.</span>
+    </h2>
+
+    <div class="surgery-line"></div>
+
+    <p class="surgery-intro">
+      O Renaissance Symposium + CIHOF, em Floripa,
+      também levará ao público uma visão prática
+      das cirurgias estéticas da face.
+    </p>
+
+    <p class="surgery-description">
+      Aproximando <strong>planejamento, técnica,
+      segurança, regeneração e resultado.</strong>
+    </p>
+
+    <div class="surgery-pillars">
+
+      <div class="pillar">
+        <span></span>
+        <div>
+          <strong>PLANEJAMENTO</strong>
+          <small>Precisão em cada etapa</small>
+        </div>
+      </div>
+
+      <div class="pillar">
+        <span></span>
+        <div>
+          <strong>TÉCNICA</strong>
+          <small>Conhecimento aplicado</small>
+        </div>
+      </div>
+
+      <div class="pillar">
+        <span></span>
+        <div>
+          <strong>SEGURANÇA</strong>
+          <small>Decisões responsáveis</small>
+        </div>
+      </div>
+
+      <div class="pillar">
+        <span></span>
+        <div>
+          <strong>REGENERAÇÃO</strong>
+          <small>Um olhar além do procedimento</small>
+        </div>
+      </div>
+
+      <div class="pillar">
+        <span></span>
+        <div>
+          <strong>RESULTADO</strong>
+          <small>Naturalidade e estratégia</small>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="facial-analysis">
+    <span>FACIAL</span>
+    <span>ANALYSIS</span>
+    <i></i>
+  </div>
+
+  <div class="technical-label label-one">
+    <br>
+    <span>PLANEJAMENTO</span>
+  </div>
+
+  <div class="technical-label label-two">
+    <br>
+    <span>PRECISÃO</span>
+  </div>
+
+  <div class="technical-label label-three">
+    <br>
+    <span>RESULTADO</span>
+  </div>
+
+  <div class="technical-circle"></div>
+
+</section>
+
+  <!-- =====================================================
+       EXPERIÊNCIA + CONEXÕES — FOTOS DE MOVIMENTO
+  ====================================================== -->
+  <section class="movement-section" id="conexoes">
+    <div class="movement-bg"></div>
+    <div class="movement-overlay"></div>
+
+    <div class="movement-shell">
+      <div class="movement-text reveal">
+        <span class="movement-kicker">EXPERIÊNCIA + CONEXÕES</span>
+        <h2>As conexões também<br><em>transformam carreiras.</em></h2>
+        <p>Conhecimento aproxima. Experiências conectam. E algumas conexões podem mudar completamente a direção de uma carreira.</p>
+      </div>
+
+      <div class="movement-gallery">
+        <div class="movement-photo movement-photo-main reveal">
+          <img src="https://images.openai.com/static-rsc-4/LZ-ek7PbMgjMJ8zteKN-hXsAxvbFSWc6y2LbbE-z0YR0GB4nQsmz0JDZfxBRGVE8w-C3mooiX23Y1_qfXlXMJNJlYymo0WJx4g4dABVXAMUvCqhTtbFARnHmPGEk0FwZhI6VbcvXO4-NKFNqk-fqvn0D1w2k6WRyn7SVzigzq83rUvoTEEop1v00kK50SfXg?purpose=fullsize" alt="Auditório e público em evento">
+          <span class="photo-label">AUDITÓRIO + PALCO</span>
+        </div>
+
+        <div class="movement-photo reveal">
+          <img src="https://images.openai.com/static-rsc-4/5dfXRtSPtVcV11VW-2fsFFqD1l0gLHaddbYikLSE9KFU4lCYtSA4asYLzNZ8iLQPckLZwodHvfA-b0-FbNIeNLE1cPcaQ51isDoGyzISJoPGGOvAbuWzy-vAnh9sCHzcy6Q8HOyjD0Y5D2t25ixTHtpvUu1RvnImD3aB34n69yFi6AVvki9GwuFstWU7rxta?purpose=fullsize" alt="Networking entre profissionais">
+          <span class="photo-label">NETWORKING</span>
+        </div>
+
+        <div class="movement-photo reveal">
+          <img src="https://images.openai.com/static-rsc-4/ruzfZywTcV76-AEK06W38qu_XfozgZwklwpEPFJAFSA62uwlDimY8UDB2VZ7iMBXg8qx1MvHKhQKVmcwjuhs4Yf1D4SP4wpU4QQRo0Z1hQg3AIgEOFmwSLYgXhyg7BpgJ5BcBGZNS3YHf1L5oXMknEnx_3FJ9VvQOg7ateGIm7SgDsSQYNR4pttUqClrfQyG?purpose=fullsize" alt="Público reunido em conferência">
+          <span class="photo-label">CONEXÕES</span>
+        </div>
+
+        <div class="movement-photo movement-photo-wide reveal">
+          <img src="https://images.openai.com/static-rsc-4/8AfipmJjzelOu0Miln3A9veAmM6HH1vN5OjgdASLmNcFZCx_M5DyAehfaYTwMZfewgJspRQdh71FNhsXfd1KtUKzBG0STpIOOIDAdCsFqWX5Ay_-_TjMucqNHNFPGX9_Gf5fDomGYplZ2KWK18EFz0_rBu8NyZBqRxCn_iPKz1v-eh3JLN6Wp1iMCx_7cYnI?purpose=fullsize" alt="Profissionais reunidos">
+          <span class="photo-label">EXPERIÊNCIA</span>
+        </div>
+
+        <div class="movement-message reveal">
+          <span class="bracket">[</span>
+          <div>
+            <strong>ONDE CONHECIMENTO<br><span>ENCONTRA EXPERIÊNCIA.</span></strong>
+            <p>Novos conhecimentos. Novas perspectivas. Novas possibilidades.</p>
+          </div>
+          <span class="bracket">]</span>
+        </div>
+      </div>
+
+      <div class="movement-bottom">
+        <span>Conhecimento aproxima.</span>
+        <span>Experiências conectam.</span>
+      </div>
+
+      <div class="center">
+        <a class="button button-gold" href="https://pay.kiwify.com.br/s8U8EQf" target="_blank" rel="noopener noreferrer">FAÇA PARTE DESSE MOVIMENTO</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="testimonials-section" id="depoimentos">
+
+    <div class="section-heading reveal">
+        <span class="eyebrow">DEPOIMENTOS</span>
+
+        <h2>
+            Quem viveu,<br>
+            <em>sentiu.</em>
+        </h2>
+
+        <p>
+            Experiências e percepções que falam de conhecimento,
+            conexão e transformação.
+        </p>
+    </div>
+
+    <div class="testimonials">
+
+        <!-- DEPOIMENTO 1 -->
+        <article class="testimonial active"
+            style="background-image: url('assets/depoimento-01.jpg');">
+
+            <div class="testimonial-overlay"></div>
+
+            <div class="testimonial-content">
+
+                <div class="quote-mark">“</div>
+
+                <div class="testimonial-copy">
+
+                    <p class="testimonial-title">
+                        Foi uma experiência
+                        <strong>transformadora!</strong>
+                    </p>
+
+                    <p>
+                        Saí com muito mais conhecimento,
+                        inspiração e uma nova visão sobre
+                        a estética regenerativa.
+                    </p>
+
+                    <div class="testimonial-line"></div>
+
+                    <span>
+                        MÉDICA<br>
+                        SÃO PAULO — SP
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- DEPOIMENTO 2 -->
+        <article class="testimonial"
+            style="background-image: url('assets/depoimento-02.jpg');">
+
+            <div class="testimonial-overlay"></div>
+
+            <div class="testimonial-content">
+
+                <div class="quote-mark">“</div>
+
+                <div class="testimonial-copy">
+
+                    <p class="testimonial-title">
+                        Além do alto nível científico,
+                        o evento me proporcionou
+                        <strong>conexões valiosas.</strong>
+                    </p>
+
+                    <p>
+                        Conheci profissionais incríveis e
+                        troquei experiências que já estão
+                        fazendo diferença na minha prática clínica.
+                    </p>
+
+                    <div class="testimonial-line"></div>
+
+                    <span>
+                        CIRURGIÃ-DENTISTA<br>
+                        CURITIBA — PR
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- DEPOIMENTO 3 -->
+        <article class="testimonial"
+            style="background-image: url('assets/depoimento-03.jpg');">
+
+            <div class="testimonial-overlay"></div>
+
+            <div class="testimonial-content">
+
+                <div class="quote-mark">“</div>
+
+                <div class="testimonial-copy">
+
+                    <p class="testimonial-title">
+                        O evento me trouxe uma
+                        <strong>nova visão profissional.</strong>
+                    </p>
+
+                    <p>
+                        Pude ver a estética de forma mais ampla,
+                        integrada e humana. Saí com a certeza
+                        de que é possível unir ciência, beleza e propósito.
+                    </p>
+
+                    <div class="testimonial-line"></div>
+
+                    <span>
+                        BIOMÉDICA ESTETA<br>
+                        RIO DE JANEIRO — RJ
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- DEPOIMENTO 4 -->
+        <article class="testimonial"
+            style="background-image: url('assets/depoimento-04.jpg');">
+
+            <div class="testimonial-overlay"></div>
+
+            <div class="testimonial-content">
+
+                <div class="quote-mark">“</div>
+
+                <div class="testimonial-copy">
+
+                    <p class="testimonial-title">
+                        Me senti verdadeiramente
+                        <strong>acolhida.</strong>
+                    </p>
+
+                    <p>
+                        O ambiente, a organização e as pessoas
+                        fazem toda a diferença. Foi uma experiência
+                        enriquecedora em todos os sentidos.
+                    </p>
+
+                    <div class="testimonial-line"></div>
+
+                    <span>
+                        ESTETICISTA<br>
+                        BELO HORIZONTE — MG
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- DEPOIMENTO 5 -->
+        <article class="testimonial"
+            style="background-image: url('assets/depoimento-05.jpg');">
+
+            <div class="testimonial-overlay"></div>
+
+            <div class="testimonial-content">
+
+                <div class="quote-mark">“</div>
+
+                <div class="testimonial-copy">
+
+                    <p class="testimonial-title">
+                        Conteúdo de excelência e
+                        <strong>experiências que ampliam horizontes.</strong>
+                    </p>
+
+                    <p>
+                        Voltei para casa com novas ideias,
+                        mais segurança e muitos planos para o futuro.
+                    </p>
+
+                    <div class="testimonial-line"></div>
+
+                    <span>
+                        NUTRICIONISTA<br>
+                        SALVADOR — BA
+                    </span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="testimonial-controls">
+
+        <button id="prevTest" aria-label="Depoimento anterior">
+            ←
+        </button>
+
+        <div id="dots"></div>
+
+        <button id="nextTest" aria-label="Próximo depoimento">
+            →
+        </button>
+
+    </div>
+
+</section>
+
+  <!-- MOVIMENTO -->
+  <section class="movement-section reveal" id="movimento">
+
+    <div class="movement-background"></div>
+
+    <div class="movement-overlay"></div>
+
+    <div class="movement-content">
+
+        <span class="section-number">UM MOVIMENTO</span>
+
+        <h2>
+            Mais do que<br>
+            um evento.
+            <em>Um movimento.</em>
+        </h2>
+
+        <div class="movement-line"></div>
+
+        <p class="movement-main-text">
+            O Renaissance Symposium + CIHOF, em Floripa reúne
+            profissionais que acreditam que o futuro da estética
+            será mais <strong>científico, regenerativo,
+            integrativo e humano.</strong>
+        </p>
+
+        <p class="movement-secondary">
+            Um movimento para quem quer acompanhar as
+            transformações da profissão —
+            <strong>e fazer parte delas.</strong>
+        </p>
+
+        <div class="movement-keywords">
+            <span>CONEXÃO</span>
+            <span>CONHECIMENTO</span>
+            <span>PROPÓSITO</span>
+            <span>TRANSFORMAÇÃO</span>
+        </div>
+
+    </div>
+
+</section>
+
+  
+  <!-- FLORIPA -->
+  <section class="section floripa" id="floripa">
+    <div class="shell">
+      <div class="section-head reveal">
+        <span class="kicker">VIVA A EXPERIÊNCIA RENAISSANCE</span>
+        <h2>Conhecimento que inspira.</h2><em>Conexões que transformam.</em>
+        <p>Dois dias para aprender, compartilhar, descobrir e fazer parte de algo maior.</p>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-image reveal"><img src="assets/local.jpg" alt="K-Platz Center"></div>
+        <div class="venue-copy reveal">
+          <div class="local-evento">
+    <span class="label">LOCAL DO EVENTO</span>
+
+    <h2>K-PLATZ CENTER</h2>
+
+    <p>
+        Av. Presidente Kennedy, 568 — Campinas, São José — SC, 88101-001
+    </p>
+
+    <a 
+        href="https://www.google.com/maps/search/?api=1&query=K-Platz+Center+São+José+SC"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-como-chegar"
+    >
+        COMO CHEGAR <span>→</span>
+    </a>
+</div>
+
+      <div class="simple-sections">
+        <div class="simple-box reveal">
+          <span class="simple-label">RECOMENDAÇÕES DE HOTÉIS</span>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/K-Platz+Hotel,+Av.+Cruz+e+Souza,+25+-+Campinas,+S%C3%A3o+Jos%C3%A9+-+SC,+88101-040/@-23.4290075,-46.3709164,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x952737447e2de075:0x6e0286f1b29ab07e!2m2!1d-48.6109764!2d-27.6006774?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ K-Platz Hotel</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Cambirela+Hotel/@-27.581269,-48.5891955,17z/data=!3m1!4b1!4m9!3m8!1s0x95274832182ae431:0xa96cbefcb48627df!5m2!4m1!1i2!8m2!3d-27.5812738!4d-48.5866206!16s%2Fg%2F11bx4m2c0g?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Cambirela Hotel</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Hotel+Br%C3%BCggemann/@-27.5910525,-48.5806064,17z/data=!3m2!4b1!5s0x952737e7e30511f1:0xdb9f3bcf7429e21!4m9!3m8!1s0x952737e809d60a89:0xbe7d747052aad975!5m2!4m1!1i2!8m2!3d-27.5910573!4d-48.5780315!16s%2Fg%2F1td77rnj?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Hotel Brüggemann</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/LK+Design+Hotel+-+Florian%C3%B3polis/@-27.587052,-48.5539545,17z/data=!3m1!4b1!4m9!3m8!1s0x9527381977ce54db:0x6e54e42dbbf70755!5m2!4m1!1i2!8m2!3d-27.5870568!4d-48.5513796!16s%2Fg%2F11lh5g0x50?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ LK Design Hotel</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Majestic+Palace+Hotel/@-27.5833168,-48.5470713,17z/data=!3m2!4b1!5s0x952738114592cb8b:0xfe0ade09ab16cc46!4m9!3m8!1s0x952738114f2ff87d:0xb271411bf8880135!5m2!4m1!1i2!8m2!3d-27.5833216!4d-48.5444964!16s%2Fg%2F1w2y_m6c?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Majestic Palace Hotel</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Faial+Prime+Suites/@-27.5946442,-48.5580589,16z/data=!3m1!4b1!4m9!3m8!1s0x95273821b082dff9:0x7d0c37a8e5c75b69!5m2!4m1!1i2!8m2!3d-27.594649!4d-48.555484!16s%2Fg%2F11bxdsq51w?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Faial Prime Suites</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Hotel+ibis/@-27.5923766,-48.5605311,17z/data=!3m1!4b1!4m9!3m8!1s0x9527381fe95f0e69:0xd17a209d6b11387c!5m2!4m1!1i2!8m2!3d-27.5923814!4d-48.5579562!16s%2Fg%2F1tffqj2f?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Hotel Ibis</a>
+        </div>
+
+        <div class="simple-box reveal">
+          <span class="simple-label">PONTOS TURÍSTICOS</span>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Catedral+Metropolitana+de+Florian%C3%B3polis+Nossa+Senhora+Do+Desterro+e+Santa+Catarina+De+Alexandria/@-27.5962808,-48.5507062,18z/data=!4m15!1m8!3m7!1s0x952748211abc60fb:0x4cb7a6b1438ca299!2sCatedral+Metropolitana+de+Florian%C3%B3polis+Nossa+Senhora+Do+Desterro+e+Santa+Catarina+De+Alexandria!8m2!3d-27.596377!4d-48.549287!10e1!16s%2Fg%2F1226m1j5!3m5!1s0x952748211abc60fb:0x4cb7a6b1438ca299!8m2!3d-27.596377!4d-48.549287!16zL20vMDZyN2t2?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Catedral Metropolitana</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Mercado+P%C3%BAblico+de+Florian%C3%B3polis/@-27.5973727,-48.5554916,17z/data=!3m1!4b1!4m6!3m5!1s0x9527382413d70529:0x5ed250f064e1c9a!8m2!3d-27.5973775!4d-48.5529167!16s%2Fg%2F12391zx9?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Mercado Público de Florianópolis</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Ribeir%C3%A3o+da+Ilha,+Florian%C3%B3polis+-+SC/@-27.7145846,-48.5812253,14z/data=!4m15!1m8!3m7!1s0x952725744ac6fd95:0x5217d3bd97c3bb98!2sRibeir%C3%A3o+da+Ilha,+Florian%C3%B3polis+-+SC!3b1!8m2!3d-27.7145846!4d-48.5606259!16s%2Fg%2F1q5bmxymw!3m5!1s0x952725744ac6fd95:0x5217d3bd97c3bb98!8m2!3d-27.7145846!4d-48.5606259!16s%2Fg%2F1q5bmxymw?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Ribeirão da Ilha</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Parque+de+Coqueiros/@-27.6015751,-48.5771166,16z/data=!3m1!4b1!4m6!3m5!1s0x95273794ec066941:0xf0fb1b82055db996!8m2!3d-27.6015799!4d-48.5745417!16s%2Fg%2F11cmbg_y_2?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Parque de Coqueiros</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Pra%C3%A7a+XV+de+Novembro+-+Centro,+Florian%C3%B3polis+-+SC,+88010-400/@-27.5976478,-48.5519895,17z/data=!4m15!1m8!3m7!1s0x95273824c0b7ca51:0xae3341442c5854e6!2sPra%C3%A7a+XV+de+Novembro+-+Centro,+Florian%C3%B3polis+-+SC,+88010-400!3b1!8m2!3d-27.5976866!4d-48.5494203!16s%2Fg%2F1q69jn2c8!3m5!1s0x95273824c0b7ca51:0xae3341442c5854e6!8m2!3d-27.5976866!4d-48.5494203!16s%2Fg%2F1q69jn2c8?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Praça XV de Novembro</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Ponte+Herc%C3%ADlio+Luz/@-27.5938069,-48.567685,17z/data=!3m1!4b1!4m6!3m5!1s0x952737f3a902cdc7:0x1aa7dec706ee183a!8m2!3d-27.5938117!4d-48.5651101!16zL20vMDZyN2t2?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Ponte Hercílio Luz</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Lagoa+da+Concei%C3%A7%C3%A3o/@-27.609138,-48.4739183,17z/data=!3m1!4b1!4m6!3m5!1s0x95270f07a452f787:0xa28273a470527299!8m2!3d-27.6091428!4d-48.4713434!16s%2Fg%2F11kqr_mq0z?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Lagoa da Conceição</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Praia+Mole/@-27.6034261,-48.4375036,16z/data=!3m1!4b1!4m6!3m5!1s0x95273e792af8530b:0xadab0995a660f825!8m2!3d-27.6022459!4d-48.4326839!16s%2Fm%2F0br_rzv?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Praia Mole</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/Santo+Antonio+de+Lisboa,+Florian%C3%B3polis+-+SC/@-27.5146906,-48.5350498,14z/data=!4m6!3m5!1s0x95274692c1cfaca5:0x9893a62751be06df!8m2!3d-27.5107133!4d-48.5124715!16s%2Fg%2F11bc6lv52f?entry=ttu&g_ep=EgoyMDI2MDgzMS4wIKXMDSoASAFQAw%3D%3D">⌂ Santo Antônio de Lisboa</a>
+        </div>
+
+        <div class="simple-box reveal">
+          <span class="simple-label">COMO CHEGAR</span>
+          <p>Use o botão do K-Platz Center para abrir o endereço diretamente no Google Maps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="shell">
+      <div class="section-head reveal">
+        <span class="kicker">PERGUNTAS FREQUENTES</span>
+        <h2>Antes de <em>embarcar para Floripa.</em></h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="reveal"><summary>Como faço para me inscrever?</summary><p>Use o botão de inscrição desta página ou selecione o lote disponível.</p></details>
+        <details class="reveal"><summary>O que está incluso na inscrição?</summary><p>Informação sobre o que está incluso em confirmação pela organização.</p></details>
+        <details class="reveal"><summary>Haverá certificado de participação?</summary><p>Informação sobre certificado em confirmação pela organização.</p></details>
+        <details class="reveal"><summary>Qual o local do evento?</summary><p>K-Platz Center — Av. Presidente Kennedy, 568 — Campinas, São José – SC, 88101-001.</p></details>
+        <details class="reveal"><summary>Posso transferir minha inscrição?</summary><p>Informação sobre transferência em confirmação pela organização.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final-cta" id="inscricao">
+    <div class="final-bg"></div>
+    <div class="final-overlay"></div>
+
+    <div class="shell final-content reveal">
+      <span class="kicker light">RENAISSANCE SYMPOSIUM + CIHOF, EM FLORIPA</span>
+      <h2>Garanta sua vaga no<br><em>Renaissance Symposium + CIHOF</em></h2>
+      <p>30 e 31 de outubro de 2026 · Florianópolis – SC</p>
+
+      <div class="final-lots">
+        <a href="https://pay.kiwify.com.br/s8U8EQf" target="_blank" rel="noopener noreferrer"><strong>1º LOTE</strong><small>VALOR ESPECIAL</small></a>
+        <a href="https://pay.kiwify.com.br/MAZ9Kqg" target="_blank" rel="noopener noreferrer"><strong>2º LOTE</strong><small>VALOR ESPECIAL</small></a>
+      </div>
+
+      <a class="button button-gold" href="https://pay.kiwify.com.br/s8U8EQf" target="_blank" rel="noopener noreferrer">GARANTA SUA VAGA →</a>
+      <div class="final-tag">A estética do futuro já começou.</div>
+      <small>Ciência. Regeneração. Wellness. Técnica. Conexões.</small>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div>
+    <strong>RENAISSANCE SYMPOSIUM + CIHOF</strong>
+    <span>30 e 31 de outubro de 2026 · Florianópolis – SC</span>
+  </div>
+  <div class="socials">
+    <a href="https://www.instagram.com/renaissance.grupo" target="_blank" rel="noopener noreferrer"><span>◎</span>@renaissance.grupo</a>
+    <a href="https://www.instagram.com/cihof_congresso_harmonizacao" target="_blank" rel="noopener noreferrer"><span>◎</span>@cihof_congresso_harmonizacao</a>
+  </div>
+  <div class="footer-whats">WhatsApp: (48) 98803-7560</div>
 </footer>
 
-<!-- WHATSAPP FLUTUANTE -->
-<a
-    href="https://wa.me/5548988037560"
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Fale conosco pelo WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
+<a class="whatsapp-float" href="https://wa.me/5548988037560" target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp"></i>
 </a>
-
 <script src="script.js"></script>
-
 </body>
 </html>
