@@ -2166,7 +2166,7 @@ button {
     inset: 0;
     z-index: -3;
 
-    background-image: url("./assets/movimento.png");
+    background-image: url("assets/movimento.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
